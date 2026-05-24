@@ -14,7 +14,7 @@ class ScenarioController(private val scenarioService: ScenarioService) {
         @RequestParam eventId: String,
         @RequestParam(required = false) stock: String?,
     ): ResponseEntity<Any> =
-        if (stock != null) {
+        if (!stock.isNullOrBlank()) {
             scenarioService.getByEventAndStock(eventId, stock)
                 ?.let { ResponseEntity.ok(it) }
                 ?: ResponseEntity.notFound().build()

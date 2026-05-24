@@ -20,7 +20,7 @@ class FeedLoader(private val outputDir: File = File("output")) : FeedLoaderPort 
     override fun loadLatest(): FeedData {
         val file = outputDir.listFiles { f -> f.extension == "json" }
             ?.maxByOrNull { it.nameWithoutExtension }
-            ?: throw NoSuchElementException("생성된 피드 파일이 없습니다.")
+            ?: throw FeedNotFoundException("생성된 피드 파일이 없습니다. generate 스크립트를 먼저 실행해주세요.")
 
         val raw = mapper.readValue<FeedData>(file)
         return raw.copy(events = raw.events.map { it.withDay() })

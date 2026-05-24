@@ -55,6 +55,12 @@ export function validate(output: GenerationOutput): ValidationError[] {
     }
   }
 
+  // Events concept/why
+  for (const ev of (output.events ?? [])) {
+    if (!ev.concept) errors.push({ path: `events[${ev.id}].concept`, message: '빈 값' })
+    if (!ev.why) errors.push({ path: `events[${ev.id}].why`, message: '빈 값' })
+  }
+
   // Narratives
   if (!output.narratives) {
     errors.push({ path: 'narratives', message: '누락' })

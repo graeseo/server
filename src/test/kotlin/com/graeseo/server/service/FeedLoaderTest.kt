@@ -3,7 +3,9 @@ package com.graeseo.server.service
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import org.junit.jupiter.api.io.TempDir
 import java.io.File
+import java.nio.file.Path
 
 class FeedLoaderTest {
 
@@ -32,8 +34,8 @@ class FeedLoaderTest {
     }
 
     @Test
-    fun `파일이 없으면 NoSuchElementException을 던진다`() {
-        val loader = FeedLoader(File("/nonexistent/path"))
-        assertThrows<NoSuchElementException> { loader.loadLatest() }
+    fun `파일이 없으면 FeedNotFoundException을 던진다`(@TempDir emptyDir: Path) {
+        val loader = FeedLoader(emptyDir.toFile())
+        assertThrows<FeedNotFoundException> { loader.loadLatest() }
     }
 }

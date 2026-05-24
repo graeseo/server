@@ -13,7 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // ── Input ──────────────────────────────────────────────────────
 
 const input: GenerationInput = {
-  date: '2026-05-25 (일)',
+  date: '2026-05-25 (월)',
   stocks: ['tsla', 'pltr'],
   events: [
     {
@@ -110,11 +110,11 @@ async function main() {
   // ── Validate ─────────────────────────────────────────────────
   const errors = validate(output)
   if (errors.length > 0) {
-    console.warn(`⚠️  검증 오류 ${errors.length}건:`)
-    for (const e of errors) console.warn(`   [${e.path}] ${e.message}`)
-  } else {
-    console.log('✅ 검증 통과')
+    console.error(`❌ 검증 오류 ${errors.length}건 — 저장 중단`)
+    for (const e of errors) console.error(`   [${e.path}] ${e.message}`)
+    process.exit(1)
   }
+  console.log('✅ 검증 통과')
 
   // ── Print preview ─────────────────────────────────────────────
   const mt = output.marketTopic
