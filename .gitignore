@@ -6,3 +6,10 @@ local.properties
 .env
 .DS_Store
 out
+
+# AI pipeline output (generated daily, not versioned)
+output/
+
+# Node scripts
+scripts/node_modules/
+scripts/dist/
