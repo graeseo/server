@@ -1,0 +1,87 @@
+{
+  "events": [
+    {
+      "id": "tsla-shareholder-2026",
+      "title": "테슬라 주주총회",
+      "date": "6/10",
+      "day": "",
+      "daysLeft": 16,
+      "stock": "tsla",
+      "concept": "머스크가 한 해 계획을 공개하는 자리예요.",
+      "why": "작년엔 도시 추가 발표가 나오자마자 5거래일 +7% 갔어요.",
+      "importance": "high"
+    },
+    {
+      "id": "macro-fomc-jun",
+      "title": "6월 FOMC 회의",
+      "date": "6/11",
+      "day": "",
+      "daysLeft": 17,
+      "stock": null,
+      "concept": "연준의 금리 결정 회의예요.",
+      "why": "금리 방향이 성장주 전체에 영향을 줘요.",
+      "importance": "high"
+    }
+  ],
+  "marketTopic": {
+    "oneLine": "FOMC 앞 긴장감 고조",
+    "headline": "6월 빅이벤트 집중 구간",
+    "why": "FOMC와 테슬라 주총이 이틀 연속 예정되어 있어요.",
+    "implications": [
+      {
+        "stock": "tsla",
+        "verdict": "변동성 확대",
+        "strength": 1,
+        "note": "주총 결과에 따라 ±8% 변동 가능."
+      },
+      {
+        "stock": "pltr",
+        "verdict": "간접 영향",
+        "strength": 0,
+        "note": "AIPCon 이후 FOMC 반응 주시."
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "eventId": "tsla-shareholder-2026",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "강세 시나리오",
+          "impact": "+8~15%",
+          "oneLine": "로보택시 일정 확정으로 불확실성 해소.",
+          "why": "구체적인 도시 리스트와 일정이 나올 경우 기대감 반영.",
+          "signals": [
+            {"title": "머스크 트윗", "description": "주총 전 긍정 발언"},
+            {"title": "사전 유출 정보", "description": "로드맵 확장 관련 보도"}
+          ],
+          "probability": 35
+        },
+        {
+          "kind": "down",
+          "title": "약세 시나리오",
+          "impact": "-7~12%",
+          "oneLine": "실망스러운 발표로 신뢰 하락.",
+          "why": "기대 대비 미흡한 발표 시 매도 압력.",
+          "signals": [
+            {"title": "사전 유출 부재", "description": "긍정 신호 없음"},
+            {"title": "머스크 언급 회피", "description": "로보택시 언급 없음"}
+          ],
+          "probability": 65
+        }
+      ]
+    }
+  ],
+  "narratives": [
+    {
+      "stock": "tsla",
+      "today": "테슬라 주주총회 D-16. 로보택시 도시 확장이 핵심 관전 포인트예요."
+    },
+    {
+      "stock": "pltr",
+      "today": "AIPCon 5 D-11. 신규 계약 발표 여부가 주가 방향을 결정할 거예요."
+    }
+  ]
+}

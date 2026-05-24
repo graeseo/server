@@ -1,0 +1,18 @@
+[
+  {
+    "key": "tsla",
+    "ticker": "TSLA",
+    "name": "테슬라",
+    "mark": "T",
+    "priceUSD": 312.40,
+    "changePercent": -1.84
+  },
+  {
+    "key": "pltr",
+    "ticker": "PLTR",
+    "name": "팔란티어",
+    "mark": "P",
+    "priceUSD": 148.20,
+    "changePercent": 2.21
+  }
+]
