@@ -56,14 +56,6 @@ export interface StockNarrative {
 
 export interface GenerationInput {
   date: string
-  events: Array<{
-    id: string
-    title: string
-    date: string
-    daysLeft: number
-    stock: StockKey | null
-    importance: 'high' | 'medium'
-  }>
   stocks: StockKey[]
 }
 
