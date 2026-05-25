@@ -22,9 +22,21 @@ export function validate(output: GenerationOutput): ValidationError[] {
     }
   }
 
-  // Scenarios
+  // Scenarios — 모든 이벤트에 대한 시나리오 존재 여부 검사
   if (!output.scenarios || output.scenarios.length === 0) {
     errors.push({ path: 'scenarios', message: '시나리오 없음' })
+  }
+
+  for (const ev of (output.events ?? [])) {
+    if (ev.stock === null) {
+      if (!output.scenarios?.find(s => s.eventId === ev.id && s.stock === 'tsla'))
+        errors.push({ path: 'scenarios', message: `매크로 이벤트 [${ev.id}] tsla 시나리오 없음` })
+      if (!output.scenarios?.find(s => s.eventId === ev.id && s.stock === 'pltr'))
+        errors.push({ path: 'scenarios', message: `매크로 이벤트 [${ev.id}] pltr 시나리오 없음` })
+    } else {
+      if (!output.scenarios?.find(s => s.eventId === ev.id && s.stock === ev.stock))
+        errors.push({ path: 'scenarios', message: `종목 이벤트 [${ev.id}] ${ev.stock} 시나리오 없음` })
+    }
   }
 
   for (const sc of (output.scenarios ?? [])) {

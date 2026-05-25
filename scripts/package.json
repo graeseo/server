@@ -4,15 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "tsx src/generate.ts"
+    "generate": "tsx src/generate.ts",
+    "notify": "tsx src/notify.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "firebase-admin": "^13.10.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.8.0",
-    "@types/node": "^22.0.0"
+    "typescript": "^5.8.0"
   }
 }

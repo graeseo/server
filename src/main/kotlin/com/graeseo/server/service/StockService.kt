@@ -11,15 +11,22 @@ class StockService(private val feedLoader: FeedLoaderPort) {
 
     private val mapper = jacksonObjectMapper()
 
-    private val stocks: List<Stock> by lazy {
+    private val staticStocks: List<Stock> by lazy {
         val resource = javaClass.classLoader.getResourceAsStream("stocks.json")
             ?: error("stocks.json not found in resources")
         mapper.readValue(resource)
     }
 
-    fun getAll(): List<Stock> = stocks
+    fun getAll(): List<Stock> {
+        val feed = feedLoader.loadLatest()
+        return staticStocks.map { base ->
+            val latest = feed.stockPrices.find { it.key == base.key }
+            if (latest != null) base.copy(priceUSD = latest.priceUSD, changePercent = latest.changePercent)
+            else base
+        }
+    }
 
-    fun getByKey(key: String): Stock? = stocks.find { it.key == key }
+    fun getByKey(key: String): Stock? = getAll().find { it.key == key }
 
     fun getNarratives(): List<StockNarrative> = feedLoader.loadLatest().narratives
 }

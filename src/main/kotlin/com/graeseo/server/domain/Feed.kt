@@ -63,7 +63,15 @@ data class StockNarrative(
     val today: String,
 )
 
+data class StockPrice(
+    val key: StockKey,
+    val priceUSD: Double,
+    val changePercent: Double,
+)
+
 data class FeedData(
+    val generatedAt: String = "",
+    val stockPrices: List<StockPrice> = emptyList(),
     val events: List<StockEvent>,
     val marketTopic: MarketTopic,
     val scenarios: List<Scenario>,

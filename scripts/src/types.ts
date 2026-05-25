@@ -67,7 +67,15 @@ export interface GenerationInput {
   stocks: StockKey[]
 }
 
+export interface StockPrice {
+  key: StockKey
+  priceUSD: number
+  changePercent: number
+}
+
 export interface GenerationOutput {
+  generatedAt: string
+  stockPrices: StockPrice[]
   events: StockEvent[]
   marketTopic: MarketTopic
   scenarios: Scenario[]

@@ -1,42 +1,81 @@
 import type Anthropic from '@anthropic-ai/sdk'
-import type { GenerationInput } from './types.js'
+import type { StockKey } from './types.js'
 
-export function buildTools(input: GenerationInput): Anthropic.Tool[] {
-  const eventIds = input.events.map(e => e.id)
-
+export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Tool[] {
   return [
     {
       name: 'generate_market_content',
-      description: '주어진 이벤트들을 분석해서 이벤트 설명, 마켓 토픽, 시나리오, 종목 내러티브를 생성한다.',
+      description: '웹 검색으로 발견한 이벤트를 바탕으로 이벤트 목록, 이벤트 설명, 마켓 토픽, 시나리오, 종목 내러티브를 생성한다.',
       input_schema: {
         type: 'object' as const,
         properties: {
+          stockPrices: {
+            type: 'array',
+            description: '웹 검색으로 확인한 각 종목의 최신 주가 (장 마감 기준 또는 현재가)',
+            items: {
+              type: 'object',
+              properties: {
+                key: { type: 'string', enum: stocks },
+                priceUSD: { type: 'number', description: '현재 주가 (USD)' },
+                changePercent: { type: 'number', description: '전일 대비 등락률 (%)' },
+              },
+              required: ['key', 'priceUSD', 'changePercent'],
+            },
+          },
+          events: {
+            type: 'array',
+            description: '웹 검색으로 발견한 향후 2-3주 이내 주요 이벤트 목록 (3-6개)',
+            items: {
+              type: 'object',
+              properties: {
+                id: { type: 'string', description: '고유 이벤트 ID (영문 케밥케이스, 예: macro-fomc-jun, tsla-shareholder-2026)' },
+                title: { type: 'string', description: '이벤트 제목 (한국어)' },
+                date: { type: 'string', description: '이벤트 날짜 (M/D 형식, 예: 6/11)' },
+                daysLeft: { type: 'integer', description: '오늘부터 이벤트까지 남은 일수' },
+                stock: { type: 'string', description: '관련 종목: "tsla", "pltr", null 중 하나. 매크로 이벤트는 null' },
+                importance: { type: 'string', enum: ['high', 'medium'], description: '주가 영향도' },
+              },
+              required: ['id', 'title', 'date', 'daysLeft', 'stock', 'importance'],
+            },
+          },
           eventDescriptions: {
             type: 'array',
             description: '각 이벤트에 대한 한국어 설명 (concept, why 필드 생성)',
             items: {
               type: 'object',
               properties: {
-                id: { type: 'string', enum: eventIds, description: '반드시 입력 이벤트 ID 그대로 사용' },
+                id: { type: 'string', description: 'events 배열의 id와 동일한 값' },
                 concept: { type: 'string', description: '"이게 뭐예요?" — 이벤트 개념 설명 (2-3문장, 쉬운 말로)' },
                 why: { type: 'string', description: '"왜 중요해요?" — 내 종목에 미치는 영향 (2-3문장, 수치 포함)' },
+                sources: {
+                  type: 'array',
+                  description: '이 설명의 근거 출처',
+                  items: {
+                    type: 'object',
+                    properties: {
+                      title: { type: 'string', description: '출처 제목 또는 문서명' },
+                      url: { type: 'string', description: '직접 확인 가능한 URL' },
+                    },
+                    required: ['title', 'url'],
+                  },
+                },
               },
-              required: ['id', 'concept', 'why'],
+              required: ['id', 'concept', 'why', 'sources'],
             },
           },
           marketTopic: {
             type: 'object',
             description: '오늘의 시장 핵심 토픽',
             properties: {
-              oneLine: { type: 'string', description: '한 줄 요약 (20자 이내)' },
+              oneLine: { type: 'string', description: '한 줄 요약 (40자 이내)' },
               headline: { type: 'string', description: '헤드라인 (40자 이내)' },
-              why: { type: 'string', description: '왜 중요한지 2-3문장' },
+              why: { type: 'string', description: '이 이슈가 시장 전체에 왜 중요한지 2-3문장. 특정 종목명(TSLA, PLTR 등) 언급 금지 — 종목 영향은 implications에서 다룸' },
               implications: {
                 type: 'array',
                 items: {
                   type: 'object',
                   properties: {
-                    stock: { type: 'string', enum: ['tsla', 'pltr'] },
+                    stock: { type: 'string', enum: stocks },
                     verdict: { type: 'string', description: '이 종목에 미치는 영향 한 줄' },
                     strength: { type: 'integer', enum: [-2, -1, 0, 1, 2], description: '-2(강한 악재)~+2(강한 호재)' },
                     note: { type: 'string', description: '세부 설명 1-2문장' },
@@ -44,8 +83,20 @@ export function buildTools(input: GenerationInput): Anthropic.Tool[] {
                   required: ['stock', 'verdict', 'strength', 'note'],
                 },
               },
+              sources: {
+                type: 'array',
+                description: '이 토픽의 근거 출처',
+                items: {
+                  type: 'object',
+                  properties: {
+                    title: { type: 'string', description: '출처 제목 또는 문서명' },
+                    url: { type: 'string', description: '직접 확인 가능한 URL' },
+                  },
+                  required: ['title', 'url'],
+                },
+              },
             },
-            required: ['oneLine', 'headline', 'why', 'implications'],
+            required: ['oneLine', 'headline', 'why', 'implications', 'sources'],
           },
           scenarios: {
             type: 'array',
@@ -53,11 +104,11 @@ export function buildTools(input: GenerationInput): Anthropic.Tool[] {
             items: {
               type: 'object',
               properties: {
-                eventId: { type: 'string', enum: eventIds, description: '반드시 입력 이벤트 ID 그대로 사용' },
-                stock: { type: 'string', enum: ['tsla', 'pltr'] },
+                eventId: { type: 'string', description: 'events 배열의 id와 동일한 값' },
+                stock: { type: 'string', enum: stocks },
                 cards: {
                   type: 'array',
-                  description: '2-3개 방향성 카드 (up/flat/down). 확률 합 = 100',
+                  description: '2~3개 카드. 확률 합 = 100',
                   items: {
                     type: 'object',
                     properties: {
@@ -79,8 +130,20 @@ export function buildTools(input: GenerationInput): Anthropic.Tool[] {
                         },
                       },
                       probability: { type: 'integer', description: '확률 (0-100)' },
+                      sources: {
+                        type: 'array',
+                        description: '이 시나리오 근거 출처',
+                        items: {
+                          type: 'object',
+                          properties: {
+                            title: { type: 'string', description: '출처 제목 또는 문서명' },
+                            url: { type: 'string', description: '직접 확인 가능한 URL' },
+                          },
+                          required: ['title', 'url'],
+                        },
+                      },
                     },
-                    required: ['kind', 'title', 'impact', 'oneLine', 'why', 'signals', 'probability'],
+                    required: ['kind', 'title', 'impact', 'oneLine', 'why', 'signals', 'probability', 'sources'],
                   },
                 },
               },
@@ -89,18 +152,30 @@ export function buildTools(input: GenerationInput): Anthropic.Tool[] {
           },
           narratives: {
             type: 'array',
-            description: '종목별 오늘의 한 줄 코멘트',
+            description: '종목별 요즘 내러티브',
             items: {
               type: 'object',
               properties: {
-                stock: { type: 'string', enum: ['tsla', 'pltr'] },
-                today: { type: 'string', description: '오늘 이 종목에 대해 알아야 할 것 (2-3문장)' },
+                stock: { type: 'string', enum: stocks },
+                today: { type: 'string', description: '개인 투자자들 사이에서 요즘 이 종목에 대해 어떤 말이 돌고 있는지, 어떤 인식이 퍼져 있는지. 4~5문장.' },
+                sources: {
+                  type: 'array',
+                  description: '이 내러티브의 근거 출처',
+                  items: {
+                    type: 'object',
+                    properties: {
+                      title: { type: 'string', description: '출처 제목 또는 문서명' },
+                      url: { type: 'string', description: '직접 확인 가능한 URL' },
+                    },
+                    required: ['title', 'url'],
+                  },
+                },
               },
-              required: ['stock', 'today'],
+              required: ['stock', 'today', 'sources'],
             },
           },
         },
-        required: ['eventDescriptions', 'marketTopic', 'scenarios', 'narratives'],
+        required: ['stockPrices', 'events', 'eventDescriptions', 'marketTopic', 'scenarios', 'narratives'],
       },
     },
   ]
