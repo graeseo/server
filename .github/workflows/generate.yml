@@ -7,6 +7,9 @@ on:
     - cron: '0 9 * * *'    # 오후 18:00 KST
   workflow_dispatch:         # GitHub Actions 탭에서 수동 실행 가능
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
