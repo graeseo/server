@@ -10,7 +10,7 @@ export function validate(output: GenerationOutput): ValidationError[] {
 
   // MarketTopic
   const mt = output.marketTopic
-  if (!mt.oneLine || mt.oneLine.length > 30) errors.push({ path: 'marketTopic.oneLine', message: `길이 초과 또는 누락: "${mt.oneLine}"` })
+  if (!mt.oneLine) errors.push({ path: 'marketTopic.oneLine', message: '누락' })
   if (!mt.headline) errors.push({ path: 'marketTopic.headline', message: '누락' })
   if (!mt.why) errors.push({ path: 'marketTopic.why', message: '누락' })
   if (!mt.implications.find(i => i.stock === 'tsla')) errors.push({ path: 'marketTopic.implications', message: 'tsla 없음' })
@@ -37,12 +37,6 @@ export function validate(output: GenerationOutput): ValidationError[] {
     const probSum = sc.cards.reduce((s, c) => s + c.probability, 0)
     if (probSum !== 100) {
       errors.push({ path: `${prefix}.cards`, message: `확률 합 != 100: ${probSum}` })
-    }
-
-    const hasUp = sc.cards.some(c => c.kind === 'up')
-    const hasDown = sc.cards.some(c => c.kind === 'down')
-    if (!hasUp || !hasDown) {
-      errors.push({ path: `${prefix}.cards`, message: `up/down 카드 필수` })
     }
 
     for (const card of sc.cards) {

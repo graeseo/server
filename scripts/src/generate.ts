@@ -6,49 +6,19 @@ import { fileURLToPath } from 'url'
 import { buildPrompt } from './prompt.js'
 import { buildTools } from './tools.js'
 import { validate } from './validate.js'
-import type { GenerationInput, GenerationOutput } from './types.js'
+import type { GenerationInput, GenerationOutput, StockKey } from './types.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // ── Input ──────────────────────────────────────────────────────
 
+const WEEKDAYS = ['일', '월', '화', '수', '목', '금', '토']
+const now = new Date()
+const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} (${WEEKDAYS[now.getDay()]})`
+
 const input: GenerationInput = {
-  date: '2026-05-25 (월)',
-  stocks: ['tsla', 'pltr'],
-  events: [
-    {
-      id: 'macro-fomc-jun',
-      title: '6월 FOMC 회의',
-      date: '6/11',
-      daysLeft: 17,
-      stock: null,
-      importance: 'high',
-    },
-    {
-      id: 'macro-options-jun',
-      title: '6월 옵션 만기일',
-      date: '6/20',
-      daysLeft: 26,
-      stock: null,
-      importance: 'medium',
-    },
-    {
-      id: 'tsla-shareholder-2026',
-      title: '테슬라 주주총회',
-      date: '6/10',
-      daysLeft: 16,
-      stock: 'tsla',
-      importance: 'high',
-    },
-    {
-      id: 'pltr-aiplatform-jun',
-      title: 'AIPCon 5 (팔란티어 AI 컨퍼런스)',
-      date: '6/5',
-      daysLeft: 11,
-      stock: 'pltr',
-      importance: 'high',
-    },
-  ],
+  date: dateStr,
+  stocks: ['tsla', 'pltr'] as StockKey[],
 }
 
 // ── Main ───────────────────────────────────────────────────────
@@ -61,34 +31,94 @@ async function main() {
   }
 
   const client = new Anthropic({ apiKey })
+  const MODEL = (process.env.CLAUDE_MODEL ?? 'claude-sonnet-4-6') as Anthropic.Model
 
   console.log('🤖 Claude API 호출 중...')
   console.log(`   날짜: ${input.date}`)
-  console.log(`   이벤트: ${input.events.length}개`)
-  console.log(`   종목: ${input.stocks.join(', ')}\n`)
+  console.log(`   종목: ${input.stocks.join(', ')}`)
+  console.log(`   모델: ${MODEL}\n`)
 
-  const tools = buildTools(input)
+  // web_search: Anthropic 서버사이드 툴 (직접 실행 불필요)
+  // generate_market_content: 사용자 정의 툴
+  const allTools = [
+    { type: 'web_search_20250305', name: 'web_search' },
+    ...buildTools(input.stocks),
+  ] as Anthropic.Tool[]
 
-  const response = await client.messages.create({
-    model: (process.env.CLAUDE_MODEL ?? 'claude-haiku-4-5-20251001') as Anthropic.Model,
-    max_tokens: 12000,
-    tools,
-    tool_choice: { type: 'any' },
-    messages: [{ role: 'user', content: buildPrompt(input) }],
-  })
+  const messages: Anthropic.MessageParam[] = [
+    { role: 'user', content: buildPrompt(input) },
+  ]
 
-  const toolUse = response.content.find(b => b.type === 'tool_use')
-  if (!toolUse || toolUse.type !== 'tool_use') {
-    console.error('tool_use 블록을 찾을 수 없습니다.')
-    console.error(JSON.stringify(response.content, null, 2))
+  let raw: Record<string, unknown> | null = null
+  let totalIn = 0
+  let totalOut = 0
+  const MAX_ITER = 10
+
+  for (let iter = 0; iter < MAX_ITER; iter++) {
+    console.log(`🔄 API 호출 (${iter + 1}/${MAX_ITER})...`)
+
+    const response = await client.messages.create({
+      model: MODEL,
+      max_tokens: 16000,
+      tools: allTools,
+      messages,
+    })
+
+    totalIn += response.usage.input_tokens
+    totalOut += response.usage.output_tokens
+
+    const genUse = response.content.find(
+      b => b.type === 'tool_use' && b.name === 'generate_market_content'
+    )
+
+    if (genUse && genUse.type === 'tool_use') {
+      raw = genUse.input as Record<string, unknown>
+      console.log('✅ 콘텐츠 생성 완료')
+      break
+    }
+
+    if (response.stop_reason === 'end_turn') {
+      console.error('❌ generate_market_content 호출 없이 종료됨')
+      process.exit(1)
+    }
+
+    // 사용자 정의 tool_use 에 대해 tool_result 반환하며 루프 계속
+    messages.push({ role: 'assistant', content: response.content })
+
+    const pendingToolUses = response.content.filter(
+      b => b.type === 'tool_use'
+    ) as Anthropic.ToolUseBlock[]
+
+    if (pendingToolUses.length > 0) {
+      messages.push({
+        role: 'user',
+        content: pendingToolUses.map(b => ({
+          type: 'tool_result' as const,
+          tool_use_id: b.id,
+          content: 'Completed.',
+        })),
+      })
+    }
+  }
+
+  if (!raw) {
+    console.error(`❌ 최대 반복 횟수(${MAX_ITER})에 도달했습니다.`)
     process.exit(1)
   }
 
-  const raw = toolUse.input as Record<string, unknown>
-  const eventDescriptions = (raw.eventDescriptions as Array<{ id: string; concept: string; why: string }> ?? [])
+  // ── Build output ──────────────────────────────────────────────
+
+  const rawEvents = (raw.events as Array<{
+    id: string; title: string; date: string; daysLeft: number
+    stock: string | null; importance: 'high' | 'medium'
+  }> ?? [])
+
+  const eventDescriptions = (raw.eventDescriptions as Array<{
+    id: string; concept: string; why: string
+  }> ?? [])
 
   const output: GenerationOutput = {
-    events: input.events.map(e => {
+    events: rawEvents.map(e => {
       const desc = eventDescriptions.find(d => d.id === e.id)
       return {
         id: e.id,
@@ -96,7 +126,7 @@ async function main() {
         date: e.date,
         day: '',
         daysLeft: e.daysLeft,
-        stock: e.stock,
+        stock: (e.stock || null) as StockKey | null,
         concept: desc?.concept ?? '',
         why: desc?.why ?? '',
         importance: e.importance,
@@ -122,9 +152,10 @@ async function main() {
   console.log(`📌 ${mt.oneLine}`)
   console.log(`📰 ${mt.headline}`)
 
-  console.log('\n── 이벤트 설명 ───────────────────────────────────')
+  console.log('\n── 이벤트 목록 ───────────────────────────────────')
   for (const ev of output.events) {
-    if (ev.concept) console.log(`[${ev.id}] ${ev.concept.slice(0, 40)}...`)
+    const stockLabel = ev.stock ? `[${ev.stock.toUpperCase()}]` : '[매크로]'
+    console.log(`${stockLabel} ${ev.title} | ${ev.date} (D-${ev.daysLeft})`)
   }
 
   console.log('\n── 시나리오 ──────────────────────────────────────')
@@ -149,7 +180,7 @@ async function main() {
   const outPath = join(outDir, filename)
   writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
   console.log(`\n💾 저장 완료: output/${filename}`)
-  console.log(`📊 토큰 사용량: 입력 ${response.usage.input_tokens} / 출력 ${response.usage.output_tokens}`)
+  console.log(`📊 토큰 사용량: 입력 ${totalIn} / 출력 ${totalOut}`)
 }
 
 main().catch(err => {
