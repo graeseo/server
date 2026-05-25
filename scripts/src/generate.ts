@@ -118,6 +118,12 @@ async function main() {
   }> ?? [])
 
   const output: GenerationOutput = {
+    generatedAt: new Date().toISOString(),
+    stockPrices: (raw.stockPrices as Array<{ key: string; priceUSD: number; changePercent: number }> ?? []).map(p => ({
+      key: p.key as StockKey,
+      priceUSD: p.priceUSD,
+      changePercent: p.changePercent,
+    })),
     events: rawEvents.map(e => {
       const desc = eventDescriptions.find(d => d.id === e.id)
       return {

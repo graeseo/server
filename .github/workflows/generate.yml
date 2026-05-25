@@ -44,3 +44,11 @@ jobs:
           git add output/
           git diff --staged --quiet || git commit -m "chore: auto-generate market content [$(date +'%Y-%m-%d %H:%M KST')]"
           git push
+
+      # 새 이벤트 추가 / D-3 이하 임박 이벤트 → FCM 푸시 알림 발송
+      # FIREBASE_SERVICE_ACCOUNT 없으면 조용히 건너뜀
+      - name: Send push notifications
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: npm run notify
+        working-directory: scripts

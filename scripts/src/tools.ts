@@ -9,6 +9,19 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
       input_schema: {
         type: 'object' as const,
         properties: {
+          stockPrices: {
+            type: 'array',
+            description: '웹 검색으로 확인한 각 종목의 최신 주가 (장 마감 기준 또는 현재가)',
+            items: {
+              type: 'object',
+              properties: {
+                key: { type: 'string', enum: stocks },
+                priceUSD: { type: 'number', description: '현재 주가 (USD)' },
+                changePercent: { type: 'number', description: '전일 대비 등락률 (%)' },
+              },
+              required: ['key', 'priceUSD', 'changePercent'],
+            },
+          },
           events: {
             type: 'array',
             description: '웹 검색으로 발견한 향후 2-3주 이내 주요 이벤트 목록 (3-6개)',
@@ -144,7 +157,7 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
               type: 'object',
               properties: {
                 stock: { type: 'string', enum: stocks },
-                today: { type: 'string', description: '요즘 시장이 이 종목을 보는 시각과 그 이유, 다가오는 이벤트와의 연결 (2-3문장)' },
+                today: { type: 'string', description: '개인 투자자들 사이에서 요즘 이 종목에 대해 어떤 말이 돌고 있는지, 어떤 인식이 퍼져 있는지. 4~5문장.' },
                 sources: {
                   type: 'array',
                   description: '이 내러티브의 근거 출처',
@@ -162,7 +175,7 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
             },
           },
         },
-        required: ['events', 'eventDescriptions', 'marketTopic', 'scenarios', 'narratives'],
+        required: ['stockPrices', 'events', 'eventDescriptions', 'marketTopic', 'scenarios', 'narratives'],
       },
     },
   ]

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 class EventService(private val feedLoader: FeedLoaderPort) {
 
     fun getByFilter(filter: String): List<StockEvent> {
-        val events = feedLoader.loadLatest().events
+        val events = feedLoader.loadLatest().events.sortedBy { it.daysLeft }
         return when (filter) {
             "all" -> events
             else -> events.filter { it.stock == filter }
