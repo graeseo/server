@@ -1,0 +1,767 @@
+{
+  "generatedAt": "2026-05-25T17:11:30.706Z",
+  "stockPrices": [
+    {
+      "key": "tsla",
+      "priceUSD": 426.01,
+      "changePercent": 1.95
+    },
+    {
+      "key": "pltr",
+      "priceUSD": 136.88,
+      "changePercent": -0.39
+    }
+  ],
+  "events": [
+    {
+      "id": "spacex-ipo-jun",
+      "title": "SpaceX IPO 상장 (일론 무스크의 또 다른 회사)",
+      "date": "6/12",
+      "day": "",
+      "daysLeft": 17,
+      "stock": "tsla",
+      "concept": "일론 무스크가 소유한 우주 회사 스페이스엑스가 대중에게 공개되는 사건이에요. 약 2조 달러(2 trillion dollar) 규모의 기업가치를 목표로 하고 있어요.",
+      "why": "테슬라 투자자들이 무스크의 관심을 스페이스엑스로 돌릴까봐 걱정해요. 무스크는 두 회사의 CEO를 동시에 맡고 있으니까, 스페이스엑스 IPO가 성공하면 테슬라 주가가 단기적으로 하락할 수 있어요.",
+      "importance": "high"
+    },
+    {
+      "id": "pltr-shareholder-jun",
+      "title": "팔란티어 주주총회",
+      "date": "6/3",
+      "day": "",
+      "daysLeft": 8,
+      "stock": "pltr",
+      "concept": "팔란티어 주주들이 모여서 회사 방향을 투표로 결정하는 행사예요. 최근 팔란티어가 85% 이상의 매출 성장을 기록했어서 많은 기대가 있어요.",
+      "why": "팔란티어가 최근 실적을 크게 이뤘기 때문에, 주주들의 신뢰도 높은 상태예요. 주주총회에서 긍정적인 뉴스가 나오면 주가가 오를 수 있어요.",
+      "importance": "high"
+    },
+    {
+      "id": "fomc-jun-decision",
+      "title": "연방준비제도(FOMC) 금리 결정 및 경제 전망",
+      "date": "6/17",
+      "day": "",
+      "daysLeft": 22,
+      "stock": null,
+      "concept": "미국 중앙은행 연방준비제도가 금리를 얼마나 올리거나 내릴지 결정하는 회의예요. 이번엔 특별히 앞으로의 경제 전망을 보여주는 '닷플롯'도 공개돼요.",
+      "why": "성장주(기술주, 전기차 회사 등)는 금리가 높아지면 주가가 떨어지는 경향이 있어요. TSLA와 PLTR은 모두 성장주여서 금리 정책에 민감하게 반응합니다.",
+      "importance": "high"
+    },
+    {
+      "id": "cpi-may-inflation",
+      "title": "5월 소비자물가지수(CPI) 발표 - 인플레이션 추이 확인",
+      "date": "6/10",
+      "day": "",
+      "daysLeft": 15,
+      "stock": null,
+      "concept": "소비자들이 느끼는 물가 상승률을 측정하는 수치예요. 이게 높으면 연방준비제도가 금리를 더 올릴 가능성이 커져요.",
+      "why": "5월 CPI가 높게 나오면 '금리를 계속 높여야 한다'는 신호가 되어 성장주 주가가 하락할 수 있어요. TSLA와 PLTR 모두 영향을 받을 거예요.",
+      "importance": "high"
+    },
+    {
+      "id": "byd-ev-sales",
+      "title": "BYD 5월 신에너지 차량 판매량 공개",
+      "date": "6/5",
+      "day": "",
+      "daysLeft": 10,
+      "stock": "tsla",
+      "concept": "중국의 배터리 기업 BYD가 한 달간 몇 대의 전기차를 팔았는지 공개하는 거예요. BYD는 현재 세계 최대 전기차 제조사예요.",
+      "why": "BYD가 판매를 계속 늘리면 테슬라의 경쟁 압박이 더 커져요. 전 세계 EV 시장 전체 추세를 보여주기 때문에 테슬라 투자자들이 주목하는 지표예요.",
+      "importance": "medium"
+    }
+  ],
+  "marketTopic": {
+    "oneLine": "성장주 약세, 금리 불확실성, 스페이스엑스 IPO 러시—테슬라-팔란티어, 분기 중 '삼중고' 마주할 듯",
+    "headline": "금리, IPO 경쟁, AI 기대치 사이에서 성장주 갈팡질팡",
+    "why": "미국 물가가 아직도 높아서 금리가 더 올라갈 수도 있어요. 동시에 일론 무스크의 스페이스엑스가 IPO를 하면서 투자자 관심을 나눠 받을 거고, AI 기업들의 실적에 대한 기대가 엄청 높아져서 살짝만 못 맞춰도 주가가 떨어지는 상황이 이어질 거예요. 테슬라는 로봇, 팔란티어는 국방 AI에 베팅하고 있는데, 둘 다 기대치가 높아서 흔들릴 수 있어요.",
+    "implications": [
+      {
+        "stock": "tsla",
+        "verdict": "단기적 약세 가능성 높음 (-3~7%). 스페이스엑스 IPO 직후 투자자 관심 이동, BYD 경쟁 강화, 금리 불확실성에 시달릴 것",
+        "strength": -1,
+        "note": "테슬라는 최근 로봇(옵티머스)과 자율주행(FSD) 기대로 주가가 고평가 상태예요. 조금만 나빠도 실망 판매가 나올 수 있어요."
+      },
+      {
+        "stock": "pltr",
+        "verdict": "중기 상승 모멘텀 유지 가능 (+2~5%). Q1 실적 대사(22% 초과달성), AI 국방 수요 확실, 주주총회 긍정 신호 기대",
+        "strength": 1,
+        "note": "팔란티어는 실적이 기대를 초과했고, 정부 계약이 안정적이에요. 다만 밸류에이션이 높아서 금리 리스크는 남아 있어요."
+      }
+    ],
+    "sources": [
+      {
+        "title": "SpaceX IPO: Market Implications for Tesla",
+        "url": "https://www.cnbc.com/2026/05/21/will-elon-musk-eventually-merge-spacex-with-tesla-speculation-builds.html"
+      },
+      {
+        "title": "Palantir Q1 2026 Earnings Beat",
+        "url": "https://public.com/stocks/pltr/earnings"
+      },
+      {
+        "title": "BYD Market Leadership in EVs",
+        "url": "https://electrek.co/2026/05/05/byd-outsells-tesla-kia-as-top-selling-ev-brand-overseas/"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "eventId": "spacex-ipo-jun",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "스페이스엑스 '대성공', 테슬라 자금 유출 우려",
+          "impact": "-5~8%",
+          "oneLine": "IPO 성공 후 무스크의 관심 이동 + 일론 팬 투자자들의 자금 이동",
+          "why": "스페이스엑스가 예상을 크게 초과하면서 펀드 수익이 크면, 개인 투자자들이 이익을 실현하려고 테슬라를 팔 수 있어요. 무스크도 인터뷰나 발표에서 스페이스엑스에 집중하겠다는 신호를 보낼 수 있고요.",
+          "signals": [
+            {
+              "title": "IPO 초과 구독률 높음",
+              "description": "스페이스엑스 IPO가 수요를 크게 상회하면 미디어 주목도 집중"
+            },
+            {
+              "title": "무스크의 언론 활동 증가",
+              "description": "로드쇼(investor roadshow) 이후 무스크 인터뷰가 스페이스엑스 중심으로 쏠릴 가능성"
+            },
+            {
+              "title": "테슬라 옵션 매도량 증가",
+              "description": "옵션 시장에서 테슬라 콜옵션(상승 베팅) 청산 신호 관찰"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "SpaceX IPO Could Hurt Tesla Stock",
+              "url": "https://www.cnbc.com/2026/05/21/will-elon-musk-eventually-merge-spacex-with-tesla-speculation-builds.html"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "스페이스엑스 성공 = 일론의 다각화 역량 증명",
+          "impact": "-2~+2%",
+          "oneLine": "IPO 자체는 중립, 장기적 '무스크 프리미엄' 유지 가능성",
+          "why": "스페이스엑스의 성공이 역으로 일론의 능력을 증명하면서 테슬라 투자자들도 '역시 일론은 대단하다'며 다시 매수할 수 있어요. 특히 장기 보유자들은 큰 변화가 없을 거예요.",
+          "signals": [
+            {
+              "title": "미디어의 긍정적 평가",
+              "description": "'일론의 또 다른 성공' 같은 포지티브 톤의 리포트 증가"
+            },
+            {
+              "title": "테슬라 주가 지지선 유지",
+              "description": "$420 이상에서 저항력 나타남"
+            },
+            {
+              "title": "기관 투자자의 매수 신호",
+              "description": "큰 펀드들의 매수 공시"
+            }
+          ],
+          "probability": 30,
+          "sources": [
+            {
+              "title": "Musk's Multiple Ventures Build Investor Confidence",
+              "url": "https://fortune.com/2026/05/21/spacex-ipo-hurt-tesla-retail-investors/"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "스페이스엑스 IPO 일정 지연 + 테슬라 '호재' 밀집",
+          "impact": "+3~5%",
+          "oneLine": "IPO 지연으로 투자자 관심 재차 테슬라로 복귀",
+          "why": "만약 스페이스엑스 IPO가 규제 문제 등으로 지연되면, 시장의 관심이 다시 테슬라로 돌아갈 거예요. 동시에 테슬라 자율주행 업데이트나 새로운 계약 뉴스가 나오면 상승 모멘텀이 강해질 수 있어요.",
+          "signals": [
+            {
+              "title": "SEC 승인 지연 뉴스",
+              "description": "스페이스엑스 IPO 규제 검토 시간 연장"
+            },
+            {
+              "title": "테슬라의 긍정적 이벤트",
+              "description": "FSD 업데이트, 배터리 기술 발표, 아시아 판매 호조 소식"
+            },
+            {
+              "title": "기술주 회복세",
+              "description": "나스닥 선물이 강한 상승세 보임"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "SpaceX IPO Timing Uncertain",
+              "url": "https://www.analyticsinsight.net/news/spacex-ipo-date-2026-elon-musk-signals-june-nasdaq-debut-as-blackrock-eyes-stake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "pltr-shareholder-jun",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "주주총회에서 CEO 리더십 강화 + AI 투자 확대 공약",
+          "impact": "+4~7%",
+          "oneLine": "기대 이상의 전략적 발표 + 배당/주식매입(buyback) 신호 가능성",
+          "why": "팔란티어 주주들은 최근 실적에 만족하고 있어요. 주주총회에서 CEO가 2027년 예상 성장률을 더 높이거나, 주식매입(자사주 買入)을 공시하면 주가는 즉시 반응할 거예요.",
+          "signals": [
+            {
+              "title": "CEO의 강한 AI 투자 선언",
+              "description": "2026~2027 AI 분야 R&D 투자 확대 발표"
+            },
+            {
+              "title": "주식매입(buyback) 공시",
+              "description": "$5~10억 규모의 자사주 매입 계획"
+            },
+            {
+              "title": "정부 계약 파이프라인 공개",
+              "description": "앞으로 3년간의 국방부/정보기관 신규 계약 기대치 상향"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "Palantir Q1 2026 Guidance Raise",
+              "url": "https://public.com/stocks/pltr/earnings"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "주주총회 '평범한 진행' + 이미 반영된 기대치",
+          "impact": "-1~+1%",
+          "oneLine": "주주들은 만족하지만, 주가에는 큰 영향 미치지 않음",
+          "why": "팔란티어의 실적이 이미 시장에 잘 알려져 있고, 4월 재무 자료 공개 이후 기대가 많이 반영돼 있어요. 주주총회는 형식적인 투표가 대부분이라 주가 변동이 제한적일 수 있어요.",
+          "signals": [
+            {
+              "title": "주총 전후 거래량 정상 수준",
+              "description": "참석 주주 수가 평년 수준"
+            },
+            {
+              "title": "애널리스트 리포트 갱신 없음",
+              "description": "새로운 타겟 가격 조정 없음"
+            },
+            {
+              "title": "기관 투자자 입장 변화 없음",
+              "description": "대량 매수/매도 신호 부재"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "PLTR Annual Shareholder Meeting",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000019/pltr-20260423.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "밸류에이션 우려 + 정부 계약 파이프라인 부진 신호",
+          "impact": "-3~6%",
+          "oneLine": "주가 고평가 지적 + 국방부 예산 삭감 우려 언급",
+          "why": "팔란티어 주가는 이미 52주 최고가에서 35% 이상 내렸어요. 만약 주주총회에서 CEO가 신중한 표현을 쓰거나, 정부 예산 삭감 리스크를 언급하면 매도 신호로 받아들여질 수 있어요.",
+          "signals": [
+            {
+              "title": "CEO의 신중한 발언",
+              "description": "'경제 불확실성'이나 '정부 예산 제약' 언급"
+            },
+            {
+              "title": "가이던스(guidance) 동결 또는 인하",
+              "description": "이전 발표한 성장 목표 유지만 발표"
+            },
+            {
+              "title": "대주주의 지분 매도 공시",
+              "description": "내부자 거래(insider selling) 신호"
+            }
+          ],
+          "probability": 20,
+          "sources": [
+            {
+              "title": "PLTR Valuation Concerns",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "fomc-jun-decision",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "FOMC '매파 톤' + 금리 인상 신호 강화",
+          "impact": "-6~10%",
+          "oneLine": "연방준비제도가 앞으로도 금리를 높이겠다는 메시지 + 성장주 일괄 매도",
+          "why": "물가가 여전히 높으면 연준은 금리를 더 올릴 수밖에 없어요. 금리가 올라가면 테슬라 같은 '미래 수익에 베팅'하는 기업들의 주가는 하락해요. 테슬라는 현재 수익보다 2035년의 로봇 사업에 가치를 두고 있거든요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯에서 추가 인상 신호",
+              "description": "2026년 추가 금리 인상 예상 회수 증가"
+            },
+            {
+              "title": "파월 의장의 '물가 여전히 높음' 강조",
+              "description": "기자회견에서 인플레이션 경고"
+            },
+            {
+              "title": "10년물 국채 금리 급상승",
+              "description": "금리가 4.5% 이상으로 치솟음 (현재 ~4.2%)"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "FOMC June 2026 Meeting",
+              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "FOMC '균형 잡힌' 메시지 + 금리 동결 예상",
+          "impact": "-2~+2%",
+          "oneLine": "금리 인상도, 인하도 아닌 상황 유지 신호",
+          "why": "연준이 '아직 더 관찰 중'이라는 중립적 톤을 유지하면 시장이 혼란스러워해요. 명확한 신호가 없으면 주가도 움직임이 적을 수 있어요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯 기존과 유사",
+              "description": "추가 인상 기대치 변화 없음"
+            },
+            {
+              "title": "파월의 '기다리는' 톤",
+              "description": "'더 많은 데이터가 필요하다' 발언"
+            },
+            {
+              "title": "변동성지수(VIX) 정상 수준 유지",
+              "description": "15~18 사이의 안정적 수준"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "Fed Meeting and Rate Decision",
+              "url": "https://primerates.com/primerate/fed-meeting-schedule/"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "FOMC '비둘기파 톤' + 금리 인하 신호 강화",
+          "impact": "+5~8%",
+          "oneLine": "2026년 추가 인상 가능성 낮음 + 성장주 일괄 매수",
+          "why": "만약 경제가 생각보다 약해지거나 물가가 떨어지면, 연준은 '금리 인상을 멈추거나 내릴 수도 있다'는 신호를 보낼 수 있어요. 그럼 테슬라 같은 성장주는 반등할 거예요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯에서 인상 예상 회수 감소",
+              "description": "2026년 추가 인상 기대치 낮아짐"
+            },
+            {
+              "title": "파월의 낙관적 발언",
+              "description": "'물가 진전 있음' 또는 '노동 시장 냉각' 언급"
+            },
+            {
+              "title": "10년물 국채 금리 하락",
+              "description": "금리가 4% 아래로 내려갈 가능성"
+            }
+          ],
+          "probability": 30,
+          "sources": [
+            {
+              "title": "FOMC Forward Guidance",
+              "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "fomc-jun-decision",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "FOMC '매파 톤' + 안전자산(국채) 선호도 증가",
+          "impact": "-5~9%",
+          "oneLine": "금리 전망 상향 + 팔란티어 같은 고성장-고밸류에이션 주식 회피",
+          "why": "금리가 높아지면 투자자들은 리스크가 적은 국채나 은행 주식으로 몰려요. 팔란티어는 P/E가 150배 이상인 고평가 주식이라서 금리에 매우 민감해요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯 매파적 해석",
+              "description": "2026년 추가 인상 회수 증가"
+            },
+            {
+              "title": "금융주(은행, 대출업체) 급등",
+              "description": "금리 수혜 섹터의 상대적 강세"
+            },
+            {
+              "title": "기술주와 성장주 동반 약세",
+              "description": "나스닥 지수 하락"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "FOMC June Rate Decision",
+              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "FOMC '중립적' 입장 + 팔란티어 보합장 예상",
+          "impact": "-1~+2%",
+          "oneLine": "금리 전망 불변 + 팔란티어는 아무 신호도 받지 못함",
+          "why": "명확한 금리 신호가 없으면 팔란티어도 큰 움직임이 없어요. 이미 4월 실적으로 충분히 평가받았기 때문에 추가적인 트리거가 없으면 제자리걸음할 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯 기존과 동일",
+              "description": "금리 경로 변화 없음"
+            },
+            {
+              "title": "기술주 거래량 정상 수준",
+              "description": "큰 기관 매수/매도 없음"
+            },
+            {
+              "title": "팔란티어 IV(변동성) 낮음",
+              "description": "옵션 시장에서도 변동성 기대치 낮음"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "Fed Forward Guidance",
+              "url": "https://primerates.com/primerate/fed-meeting-schedule/"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "FOMC '비둘기파 톤' + AI 기업 재평가 상승장",
+          "impact": "+4~6%",
+          "oneLine": "금리 인상 멈춤 신호 + 성장-AI 주식 반등",
+          "why": "연준이 금리 인상을 멈추거나 인하할 가능성을 시사하면, 투자자들이 성장주로 돌아와요. 팔란티어는 AI와 국방 수요라는 두 가지 강점이 있어서 반등력이 강할 수 있어요.",
+          "signals": [
+            {
+              "title": "FOMC 닷플롯 비둘기파 해석",
+              "description": "2026년 추가 인상 기대치 낮아짐"
+            },
+            {
+              "title": "나스닥-100 선물 급등",
+              "description": "기술주 지수 기계적 상승"
+            },
+            {
+              "title": "팔란티어 기관 매수 신호",
+              "description": "대형 펀드의 '정가매수' 호가 관찰"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "FOMC Economic Projections",
+              "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "cpi-may-inflation",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "5월 CPI '예상 이상으로 높음' + 연준의 금리 인상 추진 강화",
+          "impact": "-5~8%",
+          "oneLine": "인플레이션 재가열 우려 + 금리 전망 상향 조정",
+          "why": "물가가 예상보다 높으면 '연준이 금리를 더 내릴 여유가 없다'는 신호가 돼요. 테슬라는 저금리 환경에 의존하는 기업이라 금리가 높아지면 주가가 하락해요.",
+          "signals": [
+            {
+              "title": "CPI 상승률 4.0% 이상 (전년도비)",
+              "description": "예상(~3.8%)보다 높음"
+            },
+            {
+              "title": "에너지/식품 제외 '코어 CPI'도 높음",
+              "description": "광범위한 물가 압박"
+            },
+            {
+              "title": "10년물 국채 금리 급상승",
+              "description": "4.3% 이상으로 치솟음"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "CPI Release Schedule May 2026",
+              "url": "https://www.bls.gov/cpi/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "5월 CPI '예상 범위 내' + 시장 반응 제한적",
+          "impact": "-1~+1%",
+          "oneLine": "물가가 예상대로 움직임 + 이미 가격에 반영됨",
+          "why": "애널리스트들이 예상한 수준의 CPI가 나오면 시장도 크게 놀라지 않아요. 기대가 이미 반영돼 있기 때문에 테슬라 주가도 큰 변동이 없을 수 있어요.",
+          "signals": [
+            {
+              "title": "CPI 상승률 3.7~3.9% (전년도비)",
+              "description": "컨센서스에 부합"
+            },
+            {
+              "title": "코어 CPI도 예상 범위",
+              "description": "광범위한 의외성 없음"
+            },
+            {
+              "title": "선물 시장 변동성 낮음",
+              "description": "발표 후 나스닥 선물 변화 제한적"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "CPI Data and Forecasts",
+              "url": "https://www.bls.gov/news.release/cpi.htm"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "5월 CPI '예상 이하로 낮음' + 연준 인상 멈춤 신호",
+          "impact": "+4~6%",
+          "oneLine": "물가 안정 신호 + 성장주 반등 기대",
+          "why": "물가가 생각보다 떨어지면 연준이 금리 인상을 멈춰도 된다는 신호예요. 테슬라는 저금리 환경에서 주가가 오르는 경향이 있기 때문에 긍정적으로 반응할 거예요.",
+          "signals": [
+            {
+              "title": "CPI 상승률 3.5% 이하 (전년도비)",
+              "description": "예상보다 낮음"
+            },
+            {
+              "title": "코어 CPI도 낮아짐",
+              "description": "경제 전반의 인플레이션 완화 신호"
+            },
+            {
+              "title": "10년물 국채 금리 하락",
+              "description": "4.0% 아래로 내려갈 가능성"
+            }
+          ],
+          "probability": 20,
+          "sources": [
+            {
+              "title": "Consumer Price Index May 2026",
+              "url": "https://www.bls.gov/cpi/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "cpi-may-inflation",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "5월 CPI 높음 + 성장주 전반 약세",
+          "impact": "-4~7%",
+          "oneLine": "물가 이슈 + 금리 인상 우려로 팔란티어 고평가 주식도 함께 하락",
+          "why": "물가가 높으면 금리가 올라가고, 팔란티어 같은 고성장 기업의 가치 평가가 깎여요. P/E가 150배인 팔란티어는 금리에 매우 민감해요.",
+          "signals": [
+            {
+              "title": "CPI 상승률 4.0% 이상",
+              "description": "시장 예상 초과"
+            },
+            {
+              "title": "나스닥 선물 하락",
+              "description": "기술주 일괄 약세"
+            },
+            {
+              "title": "팔란티어 기관 매도",
+              "description": "대형 펀드의 수익 실현 매도"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "Inflation and Tech Stocks Impact",
+              "url": "https://www.bls.gov/news.release/cpi.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "5월 CPI 예상대로 + 팔란티어는 기초펀더멘탈로만 평가",
+          "impact": "-1~+1%",
+          "oneLine": "특별 신호 없음 + 실적과 국방 계약이 주가를 결정",
+          "why": "물가가 예상 범위면 시장도 준비된 상태라 팔란티어도 별다른 충격 없이 거래될 거예요. 이미 높은 밸류에이션이 반영돼 있으니까요.",
+          "signals": [
+            {
+              "title": "CPI 3.7~3.9%",
+              "description": "컨센서스에 부합"
+            },
+            {
+              "title": "팔란티어 거래량 정상",
+              "description": "대량 거래 없음"
+            },
+            {
+              "title": "기술주 지수 안정적",
+              "description": "나스닥 변동성 제한적"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "CPI Release Schedule",
+              "url": "https://www.bls.gov/cpi/"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "5월 CPI 낮음 + 성장주 '인상 전환'",
+          "impact": "+3~5%",
+          "oneLine": "물가 안정 신호 + 팔란티어 AI 수혜주 재평가 상승",
+          "why": "물가가 떨어지면 금리가 올라갈 이유가 줄어들어요. 투자자들이 성장주로 돌아오면서 팔란티어도 AI-국방 이야기로 다시 주목받을 거예요.",
+          "signals": [
+            {
+              "title": "CPI 상승률 3.5% 이하",
+              "description": "예상보다 낮은 인플레이션"
+            },
+            {
+              "title": "나스닥 선물 급등",
+              "description": "기술주 일괄 매수"
+            },
+            {
+              "title": "팔란티어 기관 매수 신호",
+              "description": "큰 펀드의 매수 공시"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Tech Stocks and Interest Rates",
+              "url": "https://www.bls.gov/cpi/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "byd-ev-sales",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "BYD 판매량 재상승 + 테슬라 시장 점유율 축소 우려",
+          "impact": "-3~6%",
+          "oneLine": "중국 EV 시장에서 BYD의 우위 심화 + 테슬라의 가격 경쟁력 약화",
+          "why": "BYD는 배터리 기술과 가격 경쟁력에서 테슬라를 압도해요. 만약 BYD 판매가 한 달 300,000대를 넘으면 '테슬라의 시대가 끝났다'는 인식이 강해질 거예요.",
+          "signals": [
+            {
+              "title": "BYD 월간 판매 300,000대 이상",
+              "description": "지난달보다 증가"
+            },
+            {
+              "title": "테슬라 중국 판매 부진 뉴스",
+              "description": "동시에 테슬라 판매 감소 보도"
+            },
+            {
+              "title": "EV 섹터 전체 약세",
+              "description": "중국 경쟁 우려로 글로벌 EV 주가 하락"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "BYD April 2026 Sales Report",
+              "url": "https://www.cnbc.com/2026/05/05/byd-april-sales-exports-china-ev-rivals-leapmotor-zeekr.html"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "BYD 판매 예상대로 + 테슬라는 로봇 스토리로 복귀",
+          "impact": "-1~+1%",
+          "oneLine": "BYD 경쟁은 '알려진 사실' + 테슬라의 미래는 로봇에 있다는 입장 강화",
+          "why": "BYD와의 EV 경쟁은 이미 시장이 받아들인 현실이에요. 테슬라는 'EV 회사가 아니라 AI 로봇 회사'라는 이야기로 투자자를 설득해요. 따라서 BYD 판매량은 큰 영향을 미치지 않을 수 있어요.",
+          "signals": [
+            {
+              "title": "BYD 판매량 270,000~310,000대",
+              "description": "예상 범위 내"
+            },
+            {
+              "title": "테슬라의 로봇/FSD 뉴스 쏟아짐",
+              "description": "BYD 뉴스를 상쇄하려는 의도"
+            },
+            {
+              "title": "애널리스트 EV 경쟁 언급 줄어듦",
+              "description": "로봇 시장 기대로 옮겨감"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "BYD vs Tesla: EV Market Dynamics",
+              "url": "https://electrek.co/2026/05/05/byd-outsells-tesla-kia-as-top-selling-ev-brand-overseas/"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "BYD 판매 부진 + 테슬라 '호기' 포착",
+          "impact": "+2~4%",
+          "oneLine": "BYD 성장 둔화 신호 + 중국 경쟁 격화 수그러들 가능성",
+          "why": "만약 BYD의 5월 판매가 예상보다 크게 떨어지면 '중국 EV 시장이 포화됐나?'라는 의문이 생겨요. 이 경우 테슬라 투자자들은 '테슬라의 글로벌 시장 기회가 더 크다'고 재평가할 거예요.",
+          "signals": [
+            {
+              "title": "BYD 판매량 250,000대 이하",
+              "description": "지난달보다 감소"
+            },
+            {
+              "title": "중국 EV 시장 포화 신호",
+              "description": "중국 업체들의 가격 경쟁 약화"
+            },
+            {
+              "title": "테슬라 중국 판매 호조 뉴스",
+              "description": "동시에 테슬라 판매 증가 보도"
+            }
+          ],
+          "probability": 15,
+          "sources": [
+            {
+              "title": "BYD Sales Momentum",
+              "url": "https://www.cnbc.com/2026/05/05/byd-april-sales-exports-china-ev-rivals-leapmotor-zeekr.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "narratives": [
+    {
+      "stock": "tsla",
+      "today": "테슬라는 지금 '기대 게임'에 휩싸여 있어요. 로봇(옵티머스)과 자율주행(FSD)이 정말 대박날 거라는 기대로 주가는 1조 6000억 달러 규모인데, 실제 실적은 그에 못 미칠 수 있거든요. 유튜브나 커뮤니티에서는 '테슬라는 이미 죽었고 BYD가 왕이다'는 극단적 의견부터 '2030년이면 테슬라 시총이 5조 달러 된다'는 낙관론까지 뒤섞여 있어요. 스페이스엑스 IPO 때문에 일론 무스크의 관심이 분산될까봐 걱정하는 투자자도 많고요.",
+      "sources": [
+        {
+          "title": "Tesla Valuation and Growth Expectations",
+          "url": "https://www.fool.com/investing/2026/05/21/prediction-tesla-stock-could-go-parabolic-after-ju/"
+        },
+        {
+          "title": "SpaceX IPO Impact on Tesla",
+          "url": "https://fortune.com/2026/05/21/spacex-ipo-hurt-tesla-retail-investors/"
+        }
+      ]
+    },
+    {
+      "stock": "pltr",
+      "today": "팔란티어는 4월 실적으로 투자자들의 신뢰를 크게 얻었어요. 85% 매출 성장, 수익성(이익) 개선, 정부 계약 확실성—이 세 가지가 맞아떨어졌거든요. 하지만 주가는 최고가에서 35% 내렸고, P/E가 150배인데도 불구하고 '저평가'라고 주장하는 투자자들도 있어요. 정보 관리, 국방 AI 같은 정부 계약 보안이 투명하지 않다는 의심도 있고, '기관 투자자들이 이미 다 사서 개인 투자자는 떨어진 빵만 집어먹는 건 아닐까'하는 불안감도 커요.",
+      "sources": [
+        {
+          "title": "Palantir Q1 2026 Earnings Beat",
+          "url": "https://public.com/stocks/pltr/earnings"
+        },
+        {
+          "title": "Palantir AI and Defense Strategy",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+        }
+      ]
+    }
+  ]
+}

@@ -7,8 +7,9 @@ local.properties
 .DS_Store
 out
 
-# AI pipeline output (generated daily, not versioned)
-output/
+# AI pipeline output — JSON은 버전관리, 나머지 제외
+output/**
+!output/*.json
 
 # Node scripts
 scripts/node_modules/

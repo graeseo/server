@@ -23,7 +23,12 @@ export function validate(output: GenerationOutput): ValidationError[] {
   }
 
   // Scenarios — 모든 이벤트에 대한 시나리오 존재 여부 검사
-  if (!output.scenarios || output.scenarios.length === 0) {
+  if (!Array.isArray(output.scenarios)) {
+    errors.push({ path: 'scenarios', message: `배열이 아님: ${typeof output.scenarios}` })
+    return errors
+  }
+
+  if (output.scenarios.length === 0) {
     errors.push({ path: 'scenarios', message: '시나리오 없음' })
   }
 

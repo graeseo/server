@@ -9,5 +9,6 @@ RUN ./gradlew build -x test --no-daemon
 FROM eclipse-temurin:19-jre
 WORKDIR /app
 COPY --from=build /app/build/libs/graeseo-server-0.0.1-SNAPSHOT.jar app.jar
+COPY output output
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
