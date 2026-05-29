@@ -64,8 +64,8 @@ export function validate(output: GenerationOutput): ValidationError[] {
       if (!card.impact.match(/[+\-±]?\d/)) {
         errors.push({ path: `${prefix}.cards[${card.kind}].impact`, message: `수치 없음: "${card.impact}"` })
       }
-      if (card.signals.length < 2) {
-        errors.push({ path: `${prefix}.cards[${card.kind}].signals`, message: `신호 수 부족: ${card.signals.length}` })
+      if (card.signals.length < 1) {
+        errors.push({ path: `${prefix}.cards[${card.kind}].signals`, message: `신호 없음` })
       }
     }
   }

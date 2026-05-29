@@ -100,7 +100,7 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
           },
           scenarios: {
             type: 'array',
-            description: '이벤트별·종목별 시나리오 카드',
+            description: '이벤트별·종목별 시나리오 카드. 중요: 종목 이벤트(stock != null)는 해당 종목 1개, 매크로 이벤트(stock = null)는 tsla/pltr 2개 모두 생성. 이벤트 수 × 종목 수만큼 배열에 포함해야 함.',
             items: {
               type: 'object',
               properties: {
@@ -119,7 +119,7 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
                       why: { type: 'string', description: '이 시나리오가 실현될 이유 2-3문장' },
                       signals: {
                         type: 'array',
-                        description: '확인해야 할 신호 2-3개',
+                        description: '확인해야 할 신호 1-3개 (최소 1개 필수)',
                         items: {
                           type: 'object',
                           properties: {
