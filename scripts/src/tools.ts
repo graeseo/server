@@ -65,11 +65,11 @@ export function buildTools(stocks: StockKey[] = ['tsla', 'pltr']): Anthropic.Too
           },
           marketTopic: {
             type: 'object',
-            description: '오늘의 시장 핵심 토픽',
+            description: '오늘 글로벌 시장을 움직이는 핵심 이슈. 전쟁·지정학·금리·AI 경쟁·무역분쟁·사회적 이슈 등 세상 돌아가는 가장 임팩트 있는 주제 1개. TSLA/PLTR에 국한하지 말 것.',
             properties: {
               oneLine: { type: 'string', description: '한 줄 요약 (40자 이내)' },
               headline: { type: 'string', description: '헤드라인 (40자 이내)' },
-              why: { type: 'string', description: '이 이슈가 시장 전체에 왜 중요한지 2-3문장. 특정 종목명(TSLA, PLTR 등) 언급 금지 — 종목 영향은 implications에서 다룸' },
+              why: { type: 'string', description: '이 이슈가 왜 지금 중요한지 2-3문장. 세계 경제·시장 전체 관점으로 설명. 특정 종목명(TSLA, PLTR 등) 언급 금지 — 종목 영향은 implications에서 다룸' },
               implications: {
                 type: 'array',
                 items: {

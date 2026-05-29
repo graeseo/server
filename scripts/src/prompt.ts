@@ -69,8 +69,9 @@ export function buildPrompt(input: GenerationInput): string {
 ## 콘텐츠 기준
 
 1. **오늘의 시장 토픽** (marketTopic)
-   - 지금 시장에서 제일 핫한 이슈 1개
-   - why 필드: 시장 전체 관점에서 설명. TSLA, PLTR 등 종목명을 직접 언급하지 말 것. 아래 implications에서 다루기 때문
+   - 오늘 글로벌 시장에서 제일 중요한 이슈 1개. TSLA/PLTR에 국한하지 말 것
+   - 전쟁, 지정학적 긴장, 무역분쟁, 연준 정책, AI 패권 경쟁, 에너지 위기, 사회적 이슈 등 세상 돌아가는 핵심 주제를 선정해요
+   - why 필드: 세계 경제·시장 전체 관점에서 설명. TSLA, PLTR 등 종목명을 직접 언급하지 말 것. 아래 implications에서 다루기 때문
    - implications 필드: 각 종목에 구체적으로 어떤 영향인지
 
 2. **이벤트별 시나리오 카드** (scenarios)
