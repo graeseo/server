@@ -1,0 +1,626 @@
+{
+  "generatedAt": "2026-05-29T01:00:36.202Z",
+  "stockPrices": [
+    {
+      "key": "tsla",
+      "priceUSD": 441.01,
+      "changePercent": 1.56
+    },
+    {
+      "key": "pltr",
+      "priceUSD": 137.57,
+      "changePercent": 7.83
+    }
+  ],
+  "events": [
+    {
+      "id": "pltr-shareholder-jun",
+      "title": "팔란티르 주주총회",
+      "date": "6/3",
+      "day": "",
+      "daysLeft": 5,
+      "stock": "pltr",
+      "concept": "주주들이 모여서 회사 경영진에게 질문하고, 주요 사안에 대해 투표하는 자리예요. 팔란티르 경영진이 올해 사업 계획과 성과를 설명할 때가 예요.",
+      "why": "최근 팔란티르 주가는 Q1 실적 이후 하락했는데, 주주총회에서 경영진의 자신감 있는 발언이나 새로운 계약 발표가 나올 경우 투자자 심리가 크게 바뀔 수 있어요. 또한 국방/정부 부문 수주 전망이 나올 수 있는 기회예요.",
+      "importance": "high"
+    },
+    {
+      "id": "macro-fomc-jun",
+      "title": "FOMC 회의 (금리 결정 발표)",
+      "date": "6/17",
+      "day": "",
+      "daysLeft": 19,
+      "stock": null,
+      "concept": "연방준비제도(미국 중앙은행)가 기준 금리를 어떻게 할지 발표하는 날이에요. 금리가 올라가면 빌리기 비싸지고, 내려가면 싸져요.",
+      "why": "성장주(테슬라, 팔란티르 같은)는 금리가 내려갈 것으로 예상될 때 더 오르는 경향이 있어요. 반대로 금리가 계속 높을 것 같으면 주가가 내려요. 6월 FOMC에서 나올 '점도표'(금리 전망)가 특히 중요해요.",
+      "importance": "high"
+    },
+    {
+      "id": "tsla-q2-delivery",
+      "title": "테슬라 Q2 인도량 발표 (예상)",
+      "date": "7/2",
+      "day": "",
+      "daysLeft": 34,
+      "stock": "tsla",
+      "concept": "테슬라가 2분기(4월~6월)에 몇 대의 차를 팔았는지 발표하는 시점이에요. 차 판매량이 회사 실적의 가장 핵심 지표예요.",
+      "why": "테슬라 주가는 분기별 인도량 숫자에 즉각 반응해요. 작년 중국과의 경쟁이 심해서 판매량이 줄었는데, 올 2분기에 회복세를 보일 수 있는지가 핵심이에요. BYD 판매 추세와 비교되면서 전기차 시장 전체 방향도 드러나요.",
+      "importance": "high"
+    },
+    {
+      "id": "macro-cpi-jun",
+      "title": "6월 CPI 발표 (물가 지표)",
+      "date": "7/10",
+      "day": "",
+      "daysLeft": 42,
+      "stock": null,
+      "concept": "미국 물가가 얼마나 올랐는지 측정하는 지표예요. 식료품, 휘발유, 집세 등 소비자가 사는 물건들의 평균 가격 상승률을 보여줘요.",
+      "why": "물가가 높으면 연방준비제도가 금리를 올릴 가능성이 커져요. 금리가 올라가면 테슬라, 팔란티르 같은 성장주는 매력이 떨어져요. 반대로 물가가 떨어지는 신호가 나오면 금리 인하 기대로 성장주가 살아나요.",
+      "importance": "high"
+    }
+  ],
+  "marketTopic": {
+    "oneLine": "중국 전기차 경쟁 심화로 테슬라가 자율주행 AI로 회사를 재정의 중",
+    "headline": "테슬라의 변신: 차 회사에서 AI 로봇 회사로",
+    "why": "지난해 중국의 BYD가 테슬라를 제쳤을 때 투자자들이 충격을 받았어요. 올해 1분기에 테슬라가 다시 1위를 탈환했지만, 차 판매만으로는 경쟁이 점점 어려워져요. 그래서 테슬라는 이제 '자동 운전 택시(로보택시)', '휴머노이드 로봇(옵티머스)' 같은 AI 사업으로 회사 가치를 재평가받으려고 애쓰고 있어요. 투자자들이 이런 미래를 믿느냐가 2026년 테슬라 주가의 핵심이에요.",
+    "implications": [
+      {
+        "stock": "tsla",
+        "verdict": "AI 수익화 증거 필요 - 현재는 약세",
+        "strength": -1,
+        "note": "Q1 실적은 좋았지만, 로보택시와 옵티머스 같은 신사업이 실제로 수익을 낼 수 있을지 의문이 커요. 증명이 없으면 주가는 더 하락할 수 있어요."
+      },
+      {
+        "stock": "pltr",
+        "verdict": "국방·정부 수요 확대 - 긍정적",
+        "strength": 2,
+        "note": "팔란티르의 AI는 이미 군부와 정부가 실제로 쓰고 있어요. 국방력 강화 추세가 이어지면 계약이 계속 늘어날 수 있어요."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Phemex - Tesla 2026 Strategy",
+        "url": "https://phemex.com/academy/tesla-tsla-stock-2026"
+      },
+      {
+        "title": "CNBC - BYD April Sales Down",
+        "url": "https://www.cnbc.com/2026/05/05/byd-april-sales-exports-china-ev-rivals-leapmotor-zeekr.html"
+      },
+      {
+        "title": "InsideEVs - Tesla Back to No.1",
+        "url": "https://insideevs.com/news/792143/tesla-no1-ev-maker-q1-2026/"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "eventId": "pltr-shareholder-jun",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "국방 수주 발표 + CEO 강한 가이던스",
+          "impact": "+8~12%",
+          "oneLine": "경영진이 신규 계약과 강한 성장 전망을 발표",
+          "why": "팔란티르는 Q1에 거의 완벽한 실적을 냈는데도 주가가 내려갔어요. 그 이유는 상승 기대가 이미 반영되었기 때문이에요. 하지만 주주총회에서 예상을 크게 웃도는 신규 계약(국방부, 인텔리전스 커뮤니티 등)이 발표된다면, 투자자들이 '아, 이 회사는 정말 다르네'라고 깨달을 수 있어요.",
+          "signals": [
+            {
+              "title": "신규 정부 계약 발표",
+              "description": "주주총회에서 미국 국방부 또는 해외 나토군 관련 신규 수주가 나올 경우"
+            },
+            {
+              "title": "상반기 매출액 상향",
+              "description": "CEO 알렉스 카프가 올해 전체 매출 가이던스를 올릴 신호를 보낼 때"
+            },
+            {
+              "title": "대상 고객 다각화",
+              "description": "정부뿐만 아니라 상업 부문(Fortune 500 기업)에서의 성장 구체화"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "Palantir Q1 2026 Earnings",
+              "url": "https://finance.yahoo.com/quote/PLTR/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "기대 범위 내의 수치 + 중장기 비전 반복",
+          "impact": "-2~+2%",
+          "oneLine": "예상했던 대로 나오고, 새로운 정보는 없음",
+          "why": "팔란티르는 이미 몇 분기 연속 깜짝 실적을 냈어요. 투자자들의 기대치가 높아졌단 뜻이에요. 주주총회에서 '좋은 성과' 정도를 얘기하면, 충분히 좋지만 '아, 이미 알고 있던 얘기네'라고 받아들여질 수 있어요. 이 경우 주가는 옆으로 움직일 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "예상 범위의 실적",
+              "description": "CEO가 기존 가이던스를 유지하고 확대하지 않을 때"
+            },
+            {
+              "title": "일반적인 AI 관련 발언",
+              "description": "구체적인 계약사항 없이 'AI 기반의 강력한 미래'만 반복할 때"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "Palantir Investor Relations",
+              "url": "https://investors.palantir.com/events"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "상업 부문 약세 신호 + 국방 계약 지연",
+          "impact": "-6~10%",
+          "oneLine": "정부 수주는 예상대로인데 상업 고객 성장이 둔화 신호",
+          "why": "팔란티르의 최근 강점은 '정부 + 상업'을 모두 잘하고 있다는 거예요. Q1에서 상업 부문이 조금 약했단 지적이 나왔어요. 만약 주주총회에서 포춘 500대 기업 같은 상업 고객 유입이 둔화됐다는 신호가 나오면, 성장의 한 축이 꺾였다고 해석될 수 있어요. 국방은 여전히 강해도 상업이 약하면 밸류에이션 압박이 올 수 있어요.",
+          "signals": [
+            {
+              "title": "상업 부문 고객 수 정체",
+              "description": "상업 고객 잔여 계약 가치(DRV) 증가율이 기대보다 낮을 때"
+            },
+            {
+              "title": "신규 계약 건수 부진",
+              "description": "정부 계약은 늘었는데 상업 부문 신규 수주가 예상 이하"
+            }
+          ],
+          "probability": 20,
+          "sources": [
+            {
+              "title": "PLTR Q1 2026 Analysis",
+              "url": "https://www.tradingview.com/symbols/NASDAQ-PLTR/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-fomc-jun",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "연준이 금리 인하 신호 → 성장주 랠리",
+          "impact": "+5~8%",
+          "oneLine": "연준이 '올해 금리를 내릴 준비가 됐다'는 신호를 줄 때",
+          "why": "테슬라 같은 성장주는 미래의 수익을 현재 가치로 계산해요. 금리가 낮으면 미래 현금흐름이 더 값어치가 있어서 주가가 올라요. 6월 FOMC에서 점도표(금리 전망)가 올해 인하를 암시하면, 테슬라 투자자들이 '아, 로보택시와 옵티머스 개발에 대한 낮은 금리 환경이 유리하네'라고 생각하며 매수할 거예요.",
+          "signals": [
+            {
+              "title": "점도표 하향 조정",
+              "description": "연준 위원들의 연말 금리 전망이 3.4%에서 3.0% 이하로 내려갈 때"
+            },
+            {
+              "title": "의사록에서 '인하' 언급",
+              "description": "FOMC 의사록에서 '금리 인하를 고려'이라는 표현이 나올 때"
+            },
+            {
+              "title": "인플레이션 둔화 신호",
+              "description": "최근 CPI 수치가 예상보다 낮으면 인하 가능성이 올라감"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "EBC - Fed Meeting June 2026",
+              "url": "https://www.ebc.com/forex/when-does-the-fed-meet-again-final-2025-meeting-and-amp-2026-dates"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "현상 유지 (금리 동결) + 중립적 발언",
+          "impact": "-1~+3%",
+          "oneLine": "연준이 '지금은 어디로든 안 간다'는 신호",
+          "why": "현재 시장은 이미 '올해는 금리 인상도 없고, 인하도 미룰 것 같다'는 걸 어느 정도 반영했어요. 만약 6월 FOMC가 정확히 그렇다면, 놀라울 게 없으니 '그럼 지금 가격이 맞네' 정도의 반응일 거예요. 테슬라도 크게 움직이지 않고, 상황을 봐가며 보유할 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "금리 결정 동결",
+              "description": "연준이 기준금리를 3.5~3.75%에서 유지할 때"
+            },
+            {
+              "title": "점도표 유지",
+              "description": "금리 전망이 3.4% 근처에서 변화가 거의 없을 때"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Federal Reserve June Statement Expectations",
+              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "강한 인플레이션 신호 → '금리 더 올릴 수 있다' 메시지",
+          "impact": "-5~8%",
+          "oneLine": "연준이 '물가가 여전히 높아서 금리를 더 높일 수도'라고 할 때",
+          "why": "이건 최악의 시나리오예요. 테슬라 투자자 입장에서는 '그럼 미래 성장사업(로보택시, 옵티머스)이 어려워지겠네. 개발에 드는 대출금 이자가 올라가니까'라고 생각하게 돼요. 또한 강한 인플레이션은 소비자 지출을 줄여서 자동차 판매도 어렵게 해요.",
+          "signals": [
+            {
+              "title": "점도표 상향",
+              "description": "연준 위원들의 금리 전망이 3.4%에서 3.75% 이상으로 올라갈 때"
+            },
+            {
+              "title": "강경한 발언",
+              "description": "연준 의장이 '인플레이션은 여전히 높고 주의가 필요하다'고 강하게 표현할 때"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Latest FOMC Projections",
+              "url": "https://27.ebc.com/forex/when-does-the-fed-meet-again"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-fomc-jun",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "금리 인하 신호 → 팔란티르도 함께 오름",
+          "impact": "+4~7%",
+          "oneLine": "금리 인하가 예상되면 성장주 팔란티르도 반사이익",
+          "why": "팔란티르도 테슬라처럼 미래 이익을 기반으로 평가받는 성장주예요. 금리가 내려가면 현재 가치가 올라가요. 또한 금리가 낮아지면 기업들(정부 포함)이 AI 인프라에 투자하기가 더 쉬워져요. 국방비 집행도 조금 더 수월해져요.",
+          "signals": [
+            {
+              "title": "점도표 인하 신호",
+              "description": "올해 금리 인하 경로가 명시될 때"
+            },
+            {
+              "title": "금융 조건 완화",
+              "description": "채권 금리 하락으로 기업 차입 비용이 내려갈 때"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "FOMC June 2026 Meeting",
+              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "금리 동결 + 국방 수요는 여전함",
+          "impact": "-2~+2%",
+          "oneLine": "금리는 안 움직이지만 국방력 강화 기조는 계속",
+          "why": "팔란티르는 테슬라와 달리 금리에 덜 민감해요. 왜냐하면 고객이 정부와 국방부이기 때문이에요. 지정학적 긴장(중국, 러시아, 중동)이 계속되면 국방 예산은 금리 상황과 관계없이 쓰일 가능성이 높아요. 그래서 FOMC 결과가 중립적이어도 팔란티르는 '우리 사업은 여전히 잘 돌아간다'고 생각할 수 있어요.",
+          "signals": [
+            {
+              "title": "금리 동결",
+              "description": "FOMC가 현 수준 유지할 때"
+            },
+            {
+              "title": "국방 관련 뉴스",
+              "description": "NATO, 미국 국방부 예산 관련 긍정적 뉴스"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Palantir Government Segment Analysis",
+              "url": "https://finance.yahoo.com/quote/PLTR/"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "인플레이션 우려로 금리 강경화 → 성장주 패닉셀",
+          "impact": "-5~8%",
+          "oneLine": "금리가 더 올라갈 수 있다는 신호 → 투자자 패닉",
+          "why": "팔란티르도 결국 기술주예요. 금리가 오르면 기술주의 밸류에이션(주가/수익)이 압박받아요. 또한 기업과 정부가 예산을 타이트하게 쓰면 신규 AI 계약도 미뤄질 수 있어요. 비록 국방 부문은 상대적으로 탄력적이지만, 시장 전체 심리가 악화되면 팔란티르도 함께 내려갈 가능성이 있어요.",
+          "signals": [
+            {
+              "title": "점도표 상향",
+              "description": "금리 인상 전망이 올라갈 때"
+            },
+            {
+              "title": "기술주 동반 하락",
+              "description": "NASDAQ이 크게 빠지면 팔란티르도 같이 떨어질 수 있음"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Tech Sector FOMC Sensitivity",
+              "url": "https://www.tradingview.com/symbols/NASDAQ-PLTR/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "tsla-q2-delivery",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "분기 인도량 예상 초과 + BYD 약세 심화",
+          "impact": "+8~12%",
+          "oneLine": "테슬라가 예상을 웃돌고, 중국 경쟁은 약해질 때",
+          "why": "테슬라가 작년 중국 BYD에 밀렸던 부분을 올 1분기에 다시 탈환했어요. 만약 Q2에서도 분기 인도량이 예상을 웃돈다면? 또한 BYD가 계속 판매 부진을 보인다면? 투자자들이 '테슬라의 AI 전환 전략이 먹혀들고 있네. 자동차 비즈니스도 여전히 강하네'라고 깨달아요. 이럴 때는 주가가 크게 오를 거예요.",
+          "signals": [
+            {
+              "title": "분기 인도량 150만대 초과",
+              "description": "Q2 인도량이 950,000대 이상일 때"
+            },
+            {
+              "title": "중국 판매 회복",
+              "description": "테슬라 중국 판매량이 분기 전 대비 증가세 보일 때"
+            },
+            {
+              "title": "BYD 판매 부진 심화",
+              "description": "BYD 월간 판매량이 계속 전년 대비 감소할 때"
+            }
+          ],
+          "probability": 30,
+          "sources": [
+            {
+              "title": "InsideEVs - Tesla vs BYD 2026",
+              "url": "https://insideevs.com/news/792143/tesla-no1-ev-maker-q1-2026/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "분기 인도량 예상 부근 + 평범한 실적",
+          "impact": "-2~+3%",
+          "oneLine": "예상했던 대로 나오고, 새로운 놀라움은 없음",
+          "why": "테슬라의 현재 주가는 이미 '올 2분기는 꽤 잘할 거야'라는 기대를 상당히 반영했어요. 그래서 분기 인도량이 정확히 예상 범위(890,000~950,000대 정도)에 나오면, 시장은 '음, 맞네'라고만 받아들일 가능성 높아요. 주가가 크게 움직이지 않을 거예요.",
+          "signals": [
+            {
+              "title": "예상 범위의 인도량",
+              "description": "Q2 인도량이 850,000~950,000대 정도"
+            },
+            {
+              "title": "평준화된 지역 판매",
+              "description": "중국, 유럽, 북미가 모두 예상 수준의 성장"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Tesla Q2 Delivery Estimates",
+              "url": "https://www.cnbc.com/quotes/TSLA"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "분기 인도량 부진 + 중국 약세 악화",
+          "impact": "-8~12%",
+          "oneLine": "테슬라 판매가 예상을 밑도는 신호가 나올 때",
+          "why": "이건 테슬라 투자자들이 가장 두려워하는 시나리오예요. 테슬라가 AI(로보택시, 옵티머스)로 재정의되고 있지만, 여전히 회사 매출의 74%는 자동차 판매에서 나와요. 만약 Q2 인도량이 떨어진다면? 그리고 BYD가 해외에서 계속 강한 판매를 보인다면? 투자자들이 '테슬라의 AI 전환 시간이 생각보다 길어질 수 있겠네. 그 사이 차 판매는 계속 떨어지고'라고 깨달아요.",
+          "signals": [
+            {
+              "title": "분기 인도량 850,000대 이하",
+              "description": "Q2 인도량이 850,000대 미만으로 떨어질 때"
+            },
+            {
+              "title": "중국 판매 악화",
+              "description": "테슬라 중국 판매량이 전년 동기 대비 감소할 때"
+            },
+            {
+              "title": "BYD 해외 점유율 확대",
+              "description": "BYD의 유럽, 남미 판매가 계속 기록을 갱신할 때"
+            }
+          ],
+          "probability": 20,
+          "sources": [
+            {
+              "title": "CNBC - BYD Competition",
+              "url": "https://www.cnbc.com/2026/05/05/byd-april-sales-exports-china-ev-rivals-leapmotor-zeekr.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-cpi-jun",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "물가 급락 신호 → 금리 인하 기대 확산",
+          "impact": "+6~10%",
+          "oneLine": "CPI가 예상을 크게 밑돌면 금리 인하 확실해져",
+          "why": "물가가 생각보다 많이 떨어진다는 신호는 연준이 금리를 내릴 명분을 주는 거예요. 테슬라는 미래 성장에 베팅하는 종목이라, 금리가 내려가면 매력이 확 올라가요. 또한 소비자들의 지갑도 풀려서 자동차 구매도 조금 늘어날 수 있어요.",
+          "signals": [
+            {
+              "title": "CPI 전월 대비 -0.3% 이상",
+              "description": "물가가 예상과 다르게 떨어질 때"
+            },
+            {
+              "title": "핵심 CPI 둔화",
+              "description": "의료비, 서비스 같은 끈기 있는 물가가 예상보다 낮을 때"
+            },
+            {
+              "title": "마켓 금리 인하 기대 상승",
+              "description": "채권 시장에서 연말 금리 인하 확률이 높아질 때"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Fed Economic Data",
+              "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "물가 예상 부근 + 상황 유지",
+          "impact": "-2~+2%",
+          "oneLine": "CPI가 예상했던 대로 나올 때",
+          "why": "시장이 이미 물가 상황을 어느 정도 반영했어요. CPI가 정확히 예상 범위(전년 대비 3.5~3.8% 정도)에 나오면, '음, 금리는 여전히 높게 유지되겠네'라고 받아들여져요. 테슬라 주가는 옆으로 움직일 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "CPI 예상 범위 진입",
+              "description": "CPI가 3.5~3.8% 정도일 때"
+            },
+            {
+              "title": "기대 인플레이션 안정",
+              "description": "5년 기대 인플레이션이 2.3% 근처에 머물 때"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "CPI Data Schedule",
+              "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "물가 상승 가속 → 금리 높게 유지 우려",
+          "impact": "-6~10%",
+          "oneLine": "물가가 예상을 웃도면 금리가 계속 높을 것 같아져",
+          "why": "이건 최악이에요. 물가가 올라간다면 연준이 금리를 내릴 수 없어요. 오히려 올려야 할 수도 있어요. 테슬라는 미래 현금흐름에 베팅하는 주식인데, 금리가 높으면 그 미래 현금흐름의 현재 가치가 떨어져요. 또한 소비자들도 자동차 구매를 미루거나 중단할 거예요.",
+          "signals": [
+            {
+              "title": "CPI 전년 대비 4% 이상",
+              "description": "물가가 예상을 웃돌 때"
+            },
+            {
+              "title": "서비스 물가 강한 상승",
+              "description": "식당, 의료비 같은 서비스 물가가 특히 높을 때"
+            },
+            {
+              "title": "기대 인플레이션 상승",
+              "description": "소비자들이 '앞으로도 물가가 높을 거'라고 생각할 때"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Recent CPI Trends",
+              "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-cpi-jun",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "물가 하락 → 성장주 랠리 + 국방 예산 여유",
+          "impact": "+5~8%",
+          "oneLine": "물가가 떨어지면 팔란티르도 성장주로서 함께 올라감",
+          "why": "팔란티르도 성장주라 금리 하락의 혜택을 받아요. 또한 물가가 떨어진다는 건 인플레이션 우려가 줄어든다는 뜻이에요. 정부와 국방부도 '아, 이제 조금 여유 있네'라고 생각하고 AI 시스템 구축에 더 투자할 수 있어요.",
+          "signals": [
+            {
+              "title": "CPI 급락",
+              "description": "물가가 예상을 크게 밑돌 때"
+            },
+            {
+              "title": "기술주 상승",
+              "description": "NASDAQ 지수가 크게 오를 때"
+            },
+            {
+              "title": "국방 관련 긍정 뉴스",
+              "description": "예산 여유로 국방 프로젝트 추가 발표"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Growth Stock Fed Sensitivity",
+              "url": "https://finance.yahoo.com/quote/PLTR/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "물가 예상 수준 + 국방 수요 변함없음",
+          "impact": "-1~+2%",
+          "oneLine": "물가가 예상했던 대로, 국방도 여전히 강함",
+          "why": "팔란티르는 국방 계약사 특성상 물가 상황에 덜 민감해요. 정부는 물가가 높든 낮든 국방력 강화를 우선순위에 두니까요. CPI가 예상 수준이면 시장 전체는 안정적이고, 팔란티르의 사업도 계속 잘 돌아갈 것 같아요.",
+          "signals": [
+            {
+              "title": "CPI 예상 범위",
+              "description": "물가가 3.5~3.8% 정도"
+            },
+            {
+              "title": "국방력 강화 기조 지속",
+              "description": "미국, NATO, 동맹국의 국방 강화 의지 변함없음"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Palantir Government Revenue",
+              "url": "https://www.tradingview.com/symbols/NASDAQ-PLTR/"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "물가 악화 → 성장주 동반 하락 + 정부 예산 타이트",
+          "impact": "-5~8%",
+          "oneLine": "물가가 높으면 기술주도 떨어지고, 국방 예산도 줄어들 수 있어",
+          "why": "물가가 높아진다는 건 정부 예산 압박이 올 수 있단 뜻이에요. 특히 현재 미국은 막대한 국가 부채가 있어요. 인플레이션이 심해지면 정부는 '우리도 예산을 줄여야 하나'라고 생각할 수 있어요. 또한 기술주 팔란티르도 성장주라 금리 상승 우려에 휘말려요.",
+          "signals": [
+            {
+              "title": "CPI 상승",
+              "description": "물가가 예상을 웃돌 때"
+            },
+            {
+              "title": "연준 강경화 신호",
+              "description": "금리를 계속 높게 유지하거나 올린다는 신호"
+            },
+            {
+              "title": "정부 예산 논의",
+              "description": "미 의회에서 국방 예산 감축 논의가 나올 때"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Government Spending Impact",
+              "url": "https://finance.yahoo.com/quote/PLTR/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "narratives": [
+    {
+      "stock": "tsla",
+      "today": "요즘 테슬라 얘기하면 사람들이 '차는 이미 다 포화된 시장 아닌가?'라고 물어봐요. 유튜브나 커뮤니티에서도 '테슬라는 이제 로보택시와 옵티머스 로봇으로 먹고 살아야 한다'는 얘기가 많아요. 하지만 그 기술들이 정말 실현될지는 확실하지 않으니까, 투자자들 사이에서 '낙관'과 '의심' 사이를 오락가락하고 있어요. 최근 Q1 실적은 좋았는데도 주가가 안 오르는 이유도 거기예요 — '좋은 차 사업의 실적은 좋은데, 미래 AI 사업은 언제 돈 벌어주냐?'는 의심이 계속 따라다니는 거죠.",
+      "sources": [
+        {
+          "title": "Tesla Q1 2026 Earnings",
+          "url": "https://www.cnbc.com/quotes/TSLA"
+        },
+        {
+          "title": "Tesla 2026 Strategy Analysis",
+          "url": "https://phemex.com/academy/tesla-tsla-stock-2026"
+        }
+      ]
+    },
+    {
+      "stock": "pltr",
+      "today": "팔란티르는 최근에 '이 회사 정말 다르네'라는 평가가 커지고 있어요. Q1에 실적도 깜짝 초과했고, CEO 알렉스 카프가 'AI 규칙(Rule of 40)에서 145%를 기록했다'고 자랑했거든요. 하지만 주가는 오히려 내려갔어요. 이유는 '벌써 다 기대가 반영되지 않았나?'하는 의심 때문이에요. 또 팔란티르의 높은 밸류에이션(주가/수익)이 걱정이에요. 그런데 동시에 국방, 정부 계약 확대 추세는 계속되고 있어서, 장기 투자자들은 '지금 내려간 가격이 사기 아닌가?'라고 생각하는 중이에요.",
+      "sources": [
+        {
+          "title": "Palantir Q1 2026 Earnings",
+          "url": "https://www.tradingview.com/symbols/NASDAQ-PLTR/"
+        },
+        {
+          "title": "Palantir Government Revenue Growth",
+          "url": "https://finance.yahoo.com/quote/PLTR/"
+        }
+      ]
+    }
+  ]
+}
