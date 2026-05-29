@@ -23,23 +23,7 @@ const input: GenerationInput = {
 
 // ── Main ───────────────────────────────────────────────────────
 
-async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY
-  if (!apiKey) {
-    console.error('ANTHROPIC_API_KEY 환경 변수가 설정되지 않았습니다.')
-    process.exit(1)
-  }
-
-  const client = new Anthropic({ apiKey })
-  const MODEL = (process.env.CLAUDE_MODEL ?? 'claude-sonnet-4-6') as Anthropic.Model
-
-  console.log('🤖 Claude API 호출 중...')
-  console.log(`   날짜: ${input.date}`)
-  console.log(`   종목: ${input.stocks.join(', ')}`)
-  console.log(`   모델: ${MODEL}\n`)
-
-  // web_search: Anthropic 서버사이드 툴 (직접 실행 불필요)
-  // generate_market_content: 사용자 정의 툴
+async function generate(client: Anthropic, MODEL: Anthropic.Model): Promise<GenerationOutput | null> {
   const allTools = [
     { type: 'web_search_20250305', name: 'web_search' },
     ...buildTools(input.stocks),
@@ -79,10 +63,9 @@ async function main() {
 
     if (response.stop_reason === 'end_turn') {
       console.error('❌ generate_market_content 호출 없이 종료됨')
-      process.exit(1)
+      return null
     }
 
-    // 사용자 정의 tool_use 에 대해 tool_result 반환하며 루프 계속
     messages.push({ role: 'assistant', content: response.content })
 
     const pendingToolUses = response.content.filter(
@@ -103,10 +86,8 @@ async function main() {
 
   if (!raw) {
     console.error(`❌ 최대 반복 횟수(${MAX_ITER})에 도달했습니다.`)
-    process.exit(1)
+    return null
   }
-
-  // ── Build output ──────────────────────────────────────────────
 
   const rawEvents = (raw.events as Array<{
     id: string; title: string; date: string; daysLeft: number
@@ -143,14 +124,51 @@ async function main() {
     narratives: raw.narratives as GenerationOutput['narratives'],
   }
 
-  // ── Validate ─────────────────────────────────────────────────
-  const errors = validate(output)
-  if (errors.length > 0) {
-    console.error(`❌ 검증 오류 ${errors.length}건 — 저장 중단`)
-    for (const e of errors) console.error(`   [${e.path}] ${e.message}`)
+  console.log(`📊 토큰 사용량: 입력 ${totalIn} / 출력 ${totalOut}`)
+  return output
+}
+
+async function main() {
+  const apiKey = process.env.ANTHROPIC_API_KEY
+  if (!apiKey) {
+    console.error('ANTHROPIC_API_KEY 환경 변수가 설정되지 않았습니다.')
     process.exit(1)
   }
-  console.log('✅ 검증 통과')
+
+  const client = new Anthropic({ apiKey })
+  const MODEL = (process.env.CLAUDE_MODEL ?? 'claude-sonnet-4-6') as Anthropic.Model
+
+  console.log('🤖 Claude API 호출 중...')
+  console.log(`   날짜: ${input.date}`)
+  console.log(`   종목: ${input.stocks.join(', ')}`)
+  console.log(`   모델: ${MODEL}\n`)
+
+  const MAX_ATTEMPTS = 3
+  let output: GenerationOutput | null = null
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    if (attempt > 1) console.log(`\n🔁 재시도 ${attempt}/${MAX_ATTEMPTS}...`)
+
+    output = await generate(client, MODEL)
+    if (!output) continue
+
+    // ── Validate ─────────────────────────────────────────────────
+    const errors = validate(output)
+    if (errors.length > 0) {
+      console.error(`❌ 검증 오류 ${errors.length}건 (시도 ${attempt}/${MAX_ATTEMPTS})`)
+      for (const e of errors) console.error(`   [${e.path}] ${e.message}`)
+        if (attempt < MAX_ATTEMPTS) continue
+      process.exit(1)
+    }
+
+    console.log('✅ 검증 통과')
+    break
+  }
+
+  if (!output) {
+    console.error('❌ 모든 시도 실패')
+    process.exit(1)
+  }
 
   // ── Print preview ─────────────────────────────────────────────
   const mt = output.marketTopic
@@ -186,7 +204,6 @@ async function main() {
   const outPath = join(outDir, filename)
   writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8')
   console.log(`\n💾 저장 완료: output/${filename}`)
-  console.log(`📊 토큰 사용량: 입력 ${totalIn} / 출력 ${totalOut}`)
 }
 
 main().catch(err => {
