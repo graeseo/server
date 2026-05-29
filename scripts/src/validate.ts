@@ -13,6 +13,10 @@ export function validate(output: GenerationOutput): ValidationError[] {
   if (!mt.oneLine) errors.push({ path: 'marketTopic.oneLine', message: '누락' })
   if (!mt.headline) errors.push({ path: 'marketTopic.headline', message: '누락' })
   if (!mt.why) errors.push({ path: 'marketTopic.why', message: '누락' })
+  if (!Array.isArray(mt.implications)) {
+    errors.push({ path: 'marketTopic.implications', message: `배열이 아님: ${typeof mt.implications}` })
+    return errors
+  }
   if (!mt.implications.find(i => i.stock === 'tsla')) errors.push({ path: 'marketTopic.implications', message: 'tsla 없음' })
   if (!mt.implications.find(i => i.stock === 'pltr')) errors.push({ path: 'marketTopic.implications', message: 'pltr 없음' })
 
@@ -73,8 +77,8 @@ export function validate(output: GenerationOutput): ValidationError[] {
   }
 
   // Narratives
-  if (!output.narratives) {
-    errors.push({ path: 'narratives', message: '누락' })
+  if (!Array.isArray(output.narratives)) {
+    errors.push({ path: 'narratives', message: `배열이 아님: ${typeof output.narratives}` })
   } else {
     if (!output.narratives.find(n => n.stock === 'tsla')) errors.push({ path: 'narratives', message: 'tsla 없음' })
     if (!output.narratives.find(n => n.stock === 'pltr')) errors.push({ path: 'narratives', message: 'pltr 없음' })
