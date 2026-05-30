@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T12:53:59.382Z",
+  "generatedAt": "2026-05-30T18:18:41.836Z",
   "stockPrices": [
     {
       "key": "tsla",
@@ -8,767 +8,525 @@
     },
     {
       "key": "pltr",
-      "priceUSD": 156.54,
+      "priceUSD": 156.38,
       "changePercent": 9.21
     }
   ],
   "events": [
     {
-      "id": "fomc-jun-16-17",
+      "id": "pltr-shareholder-2026",
+      "title": "PLTR 2026 주주총회",
+      "date": "6/3",
+      "day": "",
+      "daysLeft": 4,
+      "stock": "pltr",
+      "concept": "주주들이 모여서 회사 방향을 투표로 정하는 날이에요. Palantir가 정부 계약으로 엄청 잘 나가는데, 주주들이 경영진을 신뢰하는지 확인하는 리트머스 테스트예요.",
+      "why": "Palantir의 Q1 실적은 수치상으로는 완벽했어요(매출 85% 증가, 영업이익 60% 마진). 하지만 CEO가 지속적으로 주식을 팔고 있고, 정부 계약의 '윤리성'을 두고 투자자들 사이에서 열띤 논쟁이 벌어지고 있어요. 이번 주주총회 투표 결과는 개인 투자자들의 '신뢰도'를 직접 반영할 거예요.",
+      "importance": "high"
+    },
+    {
+      "id": "cpi-may-2026",
+      "title": "5월 CPI 물가지수 발표",
+      "date": "6/10",
+      "day": "",
+      "daysLeft": 11,
+      "stock": null,
+      "concept": "미국 물가가 얼마나 올랐는지 보여주는 지표예요. 5월 물가 수치가 예상보다 높으면 '연준이 금리를 더 올려야 한다'는 신호가 되고, 낮으면 '금리를 내려도 괜찮다'는 신호가 돼요.",
+      "why": "지금 미국 인플레이션이 3.8%로 3년 만에 최고예요. 투자자들이 가장 궁금한 게 '연준이 정말 금리를 내릴까?'거든요. TSLA나 PLTR 같은 성장주는 금리가 내려가면 주가가 오르고, 금리가 올라가면 주가가 떨어져요. 이번 CPI 발표가 6월 17일 FOMC 회의 전의 마지막 신호탄이 될 거예요.",
+      "importance": "high"
+    },
+    {
+      "id": "fomc-jun-2026",
       "title": "FOMC 회의 및 금리 결정",
       "date": "6/17",
       "day": "",
       "daysLeft": 18,
       "stock": null,
-      "concept": "연준의 FOMC 회의에서는 기준금리(연방기금금리)를 결정해요. 금리가 올라가면 빌리는 돈이 비싸지고, 내려가면 싼 거죠. 이게 주식시장에 직접 영향을 미쳐요.",
-      "why": "테슬라처럼 미래 성장에 베팅하는 성장주는 금리 인상에 특히 약해요. 반대로 팔란티르처럼 현금흐름이 좋은 종목은 상대적으로 영향이 적어요. 금리 결정은 시장 전체의 방향을 결정하는 가장 큰 이벤트예요.",
+      "concept": "연방준비제도(미국 중앙은행)가 기준금리를 정하는 회의예요. 이 회의 결과가 나오면 미국 경제 전체의 방향이 결정돼요.",
+      "why": "FOMC는 분기마다 경제 전망(닷플롯)을 발표하는 회의인데, 6월 회의는 특별해요. 지금까지 시장이 '연준이 연말까지 금리를 내릴 거다'라고 예상하고 있거든요. 만약 연준이 '아니다, 금리는 계속 높게 유지한다'고 발표하면 성장주(TSLA, PLTR)는 큰 충격을 받을 거예요. 반대로 '금리 인하 신호가 강해지면' 둘 다 크게 오를 수 있어요.",
       "importance": "high"
     },
     {
-      "id": "pltr-shareholder-jun-3",
-      "title": "팔란티르 주주총회",
-      "date": "6/3",
-      "day": "",
-      "daysLeft": 4,
-      "stock": "pltr",
-      "concept": "팔란티르 경영진과 주주들이 만나서 회사의 실적과 미래 계획을 논의하는 자리예요. 이때 경영진의 발언이나 지침이 주가에 큰 영향을 주기도 해요.",
-      "why": "최근 팔란티르는 Q1에 매출 85% 증가, 미국 사업 104% 증가라는 초호화적인 실적을 발표했어요. 이번 주총에서 CEO 알렉스 카프가 2026년 성장 전망을 어떻게 제시할지가 중요해요. 투자자들의 기대치가 이미 높은 상태라서, 약간의 실망감도 주가 하락으로 이어질 수 있어요.",
-      "importance": "medium"
-    },
-    {
-      "id": "cpi-may-release-jun-10",
-      "title": "5월 CPI 물가 지표 발표",
-      "date": "6/10",
-      "day": "",
-      "daysLeft": 11,
-      "stock": null,
-      "concept": "CPI는 소비자물가지수예요. 쉽게 말해서 우리가 사는 물건들이 얼마나 비싸졌는지를 보여주는 지표예요. 높으면 인플레이션(물가상승), 낮으면 디플레이션(물가하락) 경향이 있어요.",
-      "why": "현재 미국의 인플레이션은 여전히 높아요(4월 기준 3.8%). 이게 내려갈지 올라갈지에 따라 연준이 금리를 어떻게 할지가 결정돼요. 성장주(테슬라)는 인플레이션 상승 뉴스에 약하고, 방어주(팔란티르 같은 정부계약 회사)는 상대적으로 견디는 경향이 있어요.",
-      "importance": "high"
-    },
-    {
-      "id": "spacex-starship-jun",
-      "title": "스페이스X 스타십 V3 비행 테스트",
-      "date": "6/15",
-      "day": "",
-      "daysLeft": 16,
-      "stock": "tsla",
-      "concept": "스페이스X의 우주 로켓 스타십 V3가 비행 테스트를 받아요. 일론 머스크가 이 로켓을 화성 이주의 핵심 기술로 보고 있어요.",
-      "why": "테슬라 주주들 입장에서는 일론의 시간과 집중력이 테슬라에서 SpaceX로 분산되는 게 아닐까 걱정해요. 스타십 테스트가 성공하면 '와, 일론 대단하다'고 느껴져서 테슬라 주가도 오를 수 있지만, 실패하면 '테슬라에 집중하지 않고 있나?'라는 의심을 받을 수도 있어요.",
-      "importance": "medium"
-    },
-    {
-      "id": "tesla-fsd-v14-lite-jun",
-      "title": "테슬라 FSD v14 라이트 출시 (6월 말)",
+      "id": "fsd-v14lite-hw3",
+      "title": "Tesla FSD V14 Lite for HW3 출시",
       "date": "6/30",
       "day": "",
       "daysLeft": 31,
       "stock": "tsla",
-      "concept": "테슬라가 4월 실적 발표 때 'FSD v14 라이트 버전을 6월 말까지 출시할 거다'라고 약속했어요. 이건 구형 하드웨어 소유자들을 위한 업그레이드예요.",
-      "why": "테슬라는 FSD 약속을 여러 번 미뤄왔거든요. 6월 말까지 정말 출시할 수 있을지가 중요해요. 성공하면 '어, 이번엔 약속을 지켰네?'라며 신뢰 회복, 실패하면 또 미루나 싶어서 신뢰 추가 하락. 투자자 신뢰도가 중요한 상황이에요.",
-      "importance": "medium"
-    },
-    {
-      "id": "byd-june-sales",
-      "title": "BYD 6월 월간 판매량 발표",
-      "date": "6/20",
-      "day": "",
-      "daysLeft": 21,
-      "stock": "tsla",
-      "concept": "중국 전기차 회사 BYD의 월간 판매량 발표예요. BYD는 테슬라의 최대 경쟁사로, 지난해 세계 1위 EV 제조사 자리를 차지했어요.",
-      "why": "최근 BYD 판매량은 8개월 연속으로 감소하고 있어요(4월은 전년대비 15.7% 하락). 6월 판매 수치가 회복되면 '아, 가격 인하 전략이 먹혔나'하고 EV 섹터 전체가 약한 신호, 계속 떨어지면 '전기차 시장 포화?'라며 테슬라도 압박을 받을 수 있어요.",
+      "concept": "테슬라가 구형 하드웨어(HW3)를 쓰는 차주들을 위해 '축약판 FSD'를 내놓는 거예요. 완전 자동주행은 안 되지만, '반자동 운전 보조' 수준으로 기능을 줄인 버전이에요.",
+      "why": "테슬라는 2018년부터 HW3 차주들한테 '미래에 자동주행이 가능해질 거다'라고 약속했어요. 그런데 지금 '불가능하다'고 인정했어요. 이건 테슬라가 7년 동이나 고객을 속인 거나 다름없거든요. 이번 V14 Lite는 그 '책임 회피'의 첫 단계예요. 6월 말까지 제대로 출시되면 '최소한 뭔가는 주는군'이라는 평가가 나올 테고, 지연되면 '역시 테슬라 약속은 못 믿겠다'는 인식이 강해져요.",
       "importance": "medium"
     }
   ],
   "marketTopic": {
-    "oneLine": "글로벌 AI 인프라 지출 경쟁과 정부 방위사업 수요가 강한 상황에서 기술주와 방위사업 회사의 실적 공개가 투자자 신뢰도를 결정할 시점",
-    "headline": "AI 인프라 투자 열풍 속 기업용 소프트웨어 지출 계속 증가, 다만 ROI 의문 제기",
-    "why": "글로벌 기업들이 2026년 AI에 수백 억 달러를 쏟아붓고 있어요. 미국 정부도 국방 예산 901억 달러(2026년) 중 AI 인프라와 우크라이나 방위사업 지원에 집중하는 중이에요. 기업용 소프트웨어 시장은 15% 성장(1.4조 달러)이 예상되지만, 실제로 기업들이 이 투자로 수익성을 올릴 수 있을지에 대한 의문이 커지고 있어요. 특히 AI 시스템 도입 후에도 '기술 마찰(Technology Friction)'로 인해 직원 1명당 연 51일의 생산성 손실이 발생한다는 연구가 나왔거든요.",
+    "oneLine": "미중 갈등 심화와 기술 보호주의로 글로벌 공급망이 재편되는 가운데, 미국 방위산업과 AI 기업들이 '전략적 파트너'로 부상하고 있어요.",
+    "headline": "지정학적 긴장이 투자자들의 '안전 자산' 선택을 바꾸고 있어요",
+    "why": "우크라이나 전쟁, 호르무즈 해협 긴장, 미중 반도체 전쟁이 동시에 터지면서 세계 경제가 불확실해지고 있어요. 투자자들은 더 이상 '수익이 높은 기업'이 아니라 '정부가 필요로 하는 기업'을 찾고 있거든요. 특히 국방부와 정보기관(CIA, FBI)이 의존하는 기업들의 주가가 올라가고 있어요. Palantir가 정부 계약으로 매출이 85% 증가한 건 그 때문이에요. 반면 Tesla처럼 '일론 머스크의 변덕'에 좌우되는 기업들은 투자자들의 신뢰가 떨어지고 있어요.",
     "implications": [
       {
-        "stock": "tsla",
-        "verdict": "긍정적, 하지만 주의 필요",
-        "strength": 1,
-        "note": "AI 서버 수요 증가로 전력·에너지 인프라 투자가 늘면 테슬라의 에너지 저장(배터리) 사업에 호재. 다만 경기 침체 우려와 금리 인상 시나리오에선 약할 수 있어요."
+        "stock": "pltr",
+        "verdict": "지정학적 긴장은 Palantir에 '장기 호재'예요",
+        "strength": 2,
+        "note": "미국 정부가 국방과 정보 활동에 더 많은 돈을 쓸수록 Palantir 같은 군산복합체 IT 기업들의 수익도 느니까요. 앞으로 2~3년은 호황이 예상돼요."
       },
       {
-        "stock": "pltr",
-        "verdict": "강한 긍정",
-        "strength": 2,
-        "note": "팔란티르는 이 AI 인프라 투자의 직접 수혜자예요. 기업과 정부가 AI 모델을 운영·관리할 소프트웨어가 필요한데, 팔란티르의 Foundry 플랫폼이 그 역할을 하거든요. 특히 미국 방위 예산 증가는 팔란티르에 직결된 수주 기회예요."
+        "stock": "tsla",
+        "verdict": "지정학적 리스크가 Tesla에는 '단기 악재'예요",
+        "strength": -1,
+        "note": "Tesla는 중국 공장(상하이 기가팩토리)에 크게 의존하고 있어요. 만약 미중 관계가 더 틀어지면 공급망이 끊길 수 있어요. 게다가 Elon Musk가 우크라이나 전쟁에서 'Starlink를 끄자'고 했다가 비판받으면서 정부의 신뢰도 떨어졌어요."
       }
     ],
     "sources": [
       {
-        "title": "Enterprises Spending 15% More on Software in 2026",
-        "url": "https://www.fool.com/investing/2026/03/01/spending-more-ai-software-how-to-profit-msft/"
+        "title": "Reuters - US-China tensions and semiconductor wars",
+        "url": "https://www.reuters.com/business/semiconductors/"
       },
       {
-        "title": "Global IT Spending to Hit 6.15 Trillion in 2026",
-        "url": "https://www.computerworld.com/article/4128002/global-it-spending-to-hit-6-15tn-in-2026-driven-by-ai-infrastructure-boom.html"
-      },
-      {
-        "title": "2026 Enterprise Software Technology Predictions",
-        "url": "https://www.alixpartners.com/newsroom/alixpartners-2026-enterprise-software-technology-predictions-report/"
-      },
-      {
-        "title": "Technology Friction Costs Enterprises 51 Workdays Per Employee",
-        "url": "https://futurumgroup.com/insights/will-technology-friction-derail-the-roi-promise-of-enterprise-ai-investments/"
+        "title": "Palantir Q1 2026 Government Revenue Growth",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/05/04/palantir-pltr-q1-2026-earnings-transcript/"
       }
     ]
   },
   "scenarios": [
     {
-      "eventId": "fomc-jun-16-17",
-      "stock": "tsla",
+      "eventId": "pltr-shareholder-2026",
+      "stock": "pltr",
       "cards": [
         {
-          "kind": "down",
-          "title": "금리 인상 신호 시나리오 (확률 35%)",
-          "impact": "-8~12%",
-          "oneLine": "연준이 인플레이션 우려로 금리 인상 가능성을 시사하면, 성장주인 테슬라는 즉각 하락",
-          "why": "테슬라 같은 고성장 기술주는 미래 수익을 현재 가치로 할인(Discounting)할 때 금리가 높을수록 현재가치가 급락해요. 또한 기업의 차입 비용도 올라가니 투자 계획 축소로 이어져요.",
+          "kind": "up",
+          "title": "주주들이 경영진을 '신임'으로 표결하는 경우",
+          "impact": "+2~3%",
+          "oneLine": "정부 계약 전망이 밝다는 신호로 받아들여져요.",
+          "why": "주주총회에서 경영진 신임 투표가 통과되면, 투자자들은 '이 회사가 정부와 장기계약을 따낼 준비가 되어 있다'고 해석해요. CEO 매도량 논쟁도 '경영진을 신뢰하지 않는 거 아니냐'는 의심을 지우게 돼요.",
           "signals": [
             {
-              "title": "연준의 매파적(금리 인상 성향) 시그널",
-              "description": "파월 의장이 '앞으로도 높은 금리 유지 필요'라는 뉘앙스 발언"
+              "title": "주주총회 찬성율 95% 이상",
+              "description": "경영진에 대한 신뢰가 매우 높다는 뜻"
             },
             {
-              "title": "향후 금리 경로(닷플롯) 상향 조정",
-              "description": "시장이 예상하던 금리보다 더 높게 유지할 거라는 신호"
-            },
-            {
-              "title": "PCE 또는 다른 인플레 지표가 여전히 높다는 평가",
-              "description": "연준이 인플레 압력이 완화되지 않았다고 판단"
+              "title": "기관 투자자 참여율 높음",
+              "description": "Vanguard, BlackRock 같은 거대 자산운용사들이 찬성표를 던졌다는 증거"
             }
           ],
-          "probability": 35,
+          "probability": 70,
           "sources": [
             {
-              "title": "FOMC June 2026 Decision",
-              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+              "title": "Palantir 2026 Shareholder Meeting Results",
+              "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001321655&type=8-K"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "윤리 문제로 '반대' 투표가 10% 이상 나오는 경우",
+          "impact": "-1~2%",
+          "oneLine": "정부 계약의 윤리성에 대한 의문이 투자자를 불안하게 만들어요.",
+          "why": "Palantir가 ICE(이민국)과 계약을 맺으면서 '추방 대상자를 찾는 AI'를 만들었다는 비판이 있어요. 만약 주주총회에서 인권 관련 투표안이 상당 수의 반대에 직면하면, 향후 정부 계약을 놓칠 수도 있다는 우려가 생기거든요.",
+          "signals": [
+            {
+              "title": "반대 투표율이 예상(5%)보다 높음",
+              "description": "투자자들 사이에 윤리 문제에 대한 우려가 생각보다 크다는 뜻"
+            },
+            {
+              "title": "인권 단체의 공개 성명",
+              "description": "투표 직후 인권 단체들이 비판성명을 내면 미디어 파장이 커져요"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Palantir SEC Filings - Shareholder Proposals",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000019/pltr-20260423.htm"
             }
           ]
         },
         {
           "kind": "flat",
-          "title": "현 상태 유지 시나리오 (확률 45%)",
-          "impact": "-2~3%",
-          "oneLine": "연준이 금리 동결을 유지하되, 앞으로도 높게 둘 것 같다는 신호 -> 약한 약세",
-          "why": "이미 시장이 금리 동결을 예상했으니 큰 변동은 없을 거예요. 다만 '금리가 오래 높은 상태 유지'라는 장기 전망이 나오면 성장주는 약간씩 약해져요.",
+          "title": "기대치대로 순탄한 진행",
+          "impact": "±0~1%",
+          "oneLine": "이미 시장이 예상한 시나리오라 큰 변수가 없어요.",
+          "why": "PLTR은 이미 실적 발표 때 주가가 크게 올랐어요. 주주총회는 '확인 절차' 수준이 될 수 있거든요. 특별한 사건이나 발표가 없으면 변동성이 적을 거예요.",
           "signals": [
             {
-              "title": "금리 유지 + 장기 고금리 기조 강조",
-              "description": "기간 구조상 2027년 이후에도 금리가 높을 수 있다는 신호"
-            },
-            {
-              "title": "인플레 하락 속도가 더딘 상황",
-              "description": "CPI가 목표(2%) 근처로 떨어지지 않고 있음"
+              "title": "사전에 공개된 의제대로 진행",
+              "description": "예상 밖의 새로운 의제나 공지가 없음"
             }
           ],
-          "probability": 45,
+          "probability": 5,
           "sources": [
             {
-              "title": "FOMC June 2026 Decision",
-              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+              "title": "Palantir Investor Relations",
+              "url": "https://investors.palantir.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "cpi-may-2026",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "CPI가 예상(3.6%)보다 높게 나오는 경우 (4.0% 이상)",
+          "impact": "-3~5%",
+          "oneLine": "인플레이션이 여전히 심하다는 뜻이라 금리 인하 시기가 미뤄져요.",
+          "why": "TSLA는 금리에 매우 민감한 '고성장 기업'이에요. 금리가 높으면 투자자들이 현금으로 주식 매입을 미루거든요. 만약 CPI가 높으면 '연준이 6월에 금리를 못 내린다'는 신호가 되고, 성장주들은 일괄 하락해요. 특히 TSLA는 '미래 수익에 베팅하는 종목'이라 금리 상승에 더 약해요.",
+          "signals": [
+            {
+              "title": "Core CPI(식료·에너지 제외) 상승률 가속",
+              "description": "광고, 운송, 주택 임차료 같은 기본 물가가 오르고 있다는 뜻. 연준이 금리를 더 올리기 쉬워져요"
+            },
+            {
+              "title": "연준 위원들의 발언 톤 변화",
+              "description": "이전에는 '금리 인하를 준비 중'이라고 했다면, CPI 발표 후 '시간이 더 필요'로 바뀔 거예요"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "Reuters - May 2026 CPI Expected to Show Sticky Inflation",
+              "url": "https://www.bls.gov/news.release/cpi.htm"
             }
           ]
         },
         {
           "kind": "up",
-          "title": "금리 인하 논의 시나리오 (확률 20%)",
+          "title": "CPI가 예상보다 낮게 나오는 경우 (3.4% 이하)",
+          "impact": "+4~6%",
+          "oneLine": "인플레이션이 누그러진다는 신호라 금리 인하 기대감이 커져요.",
+          "why": "CPI가 낮으면 연준이 '금리를 내려도 된다'고 판단하게 돼요. 성장주 투자자들은 '아, 이제 저금리 시대가 온다'고 기뻐하면서 TSLA 같은 주식을 매입해요. 특히 TSLA는 '미래 가치에 베팅하는 기업'이라 금리 인하에 가장 큰 반응을 보여요.",
+          "signals": [
+            {
+              "title": "식료·에너지 가격 하락",
+              "description": "유가가 떨어지고 곡물 가격이 내려가고 있다는 뜻"
+            },
+            {
+              "title": "시장의 '금리 인하 베팅' 확대",
+              "description": "CPI 발표 직후 금리선물 시장에서 '6월 금리 인하 확률 70%' 같은 수치가 올라갈 거예요"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "Cleveland Fed Inflation Nowcasting",
+              "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "CPI가 예상 범위(3.5~3.7%)에서 나오는 경우",
+          "impact": "±1~2%",
+          "oneLine": "시장이 이미 예상한 수준이라 큰 변동이 없어요.",
+          "why": "TSLA 주가는 이미 '금리가 천천히 내려간다'는 시나리오를 반영하고 있어요. CPI 발표가 그 예상과 비슷하면 '이미 반영된 뉴스'가 되고, 변동성이 낮을 거예요.",
+          "signals": [
+            {
+              "title": "발표 직후 S&P 500 지수 변동률이 1% 이내",
+              "description": "시장 전체가 큰 반응을 안 한다는 뜻은 기대치 범위 내라는 의미"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Federal Reserve - Economics Data",
+              "url": "https://www.federalreserve.gov/datadownload/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "cpi-may-2026",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "CPI가 높게 나와서 금리가 오래 유지되는 경우",
+          "impact": "+1~2%",
+          "oneLine": "금리가 높으면 정부 안보 지출이 늘어나고, PLTR의 정부 계약도 증가해요.",
+          "why": "역설처럼 들리지만, PLTR은 금리가 높을 때 오히려 더 강해요. 왜냐하면 경제가 불안하면 정부가 '국방력'에 더 투자하거든요. 미국 정부가 '경제가 안 좋으니까 국방 예산을 자르자'라고 하는 일은 거의 없어요. 오히려 반대예요.",
+          "signals": [
+            {
+              "title": "국방부 예산 편성 기사 증가",
+              "description": "정부가 국방 IT에 더 많은 예산을 할당하는 뉴스가 나올 거예요"
+            },
+            {
+              "title": "PLTR의 정부 고객 계약 발표",
+              "description": "CPI 발표 후 1~2주 뒤 PLTR이 새로운 정부 계약 수주를 공지할 수 있어요"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "Defense Department Budget Appropriations",
+              "url": "https://appropriations.house.gov/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "CPI가 기대치 범위에서 나오는 경우",
+          "impact": "±0~1%",
+          "oneLine": "금리 방향이 명확하지 않아도 PLTR은 정부 계약으로 안정적이어요.",
+          "why": "PLTR은 이미 Q1에서 정부 매출이 687억 달러(전년 대비 84% 증가)로 엄청 크거든요. CPI 발표의 영향보다는 '자체 실적'이 주가를 끌어가요.",
+          "signals": [
+            {
+              "title": "PLTR 기관투자자 보유 비중 유지",
+              "description": "큰 투자 회사들이 PLTR 지분을 계속 늘리고 있어요"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "Palantir Q1 2026 Government Revenue",
+              "url": "https://www.fool.com/earnings/call-transcripts/2026/05/04/palantir-pltr-q1-2026-earnings-transcript/"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "CPI가 낮게 나와서 경제 가능성을 낙관하는 경우",
+          "impact": "-1~2%",
+          "oneLine": "경제가 좋으면 민간 기업들의 AI 지출이 불어나서 정부 계약이 상대적으로 덜 주목받아요.",
+          "why": "역설적이지만, 이런 경우는 드물어요. 왜냐하면 경제가 불황이어야 정부가 '관여'에 더 많은 돈을 쓰거든요. 하지만 만약 경제가 정말 좋아지면 민간 기업의 AI 투자가 폭발하고, 투자자들이 '기술주(NVDA, META 같은)'에 더 집중할 수 있어요.",
+          "signals": [
+            {
+              "title": "기술주 대비 방위산업주의 상대 성과 하락",
+              "description": "PLTR보다 NVDA 같은 기술주 주가가 더 크게 오를 거예요"
+            }
+          ],
+          "probability": 10,
+          "sources": [
+            {
+              "title": "AI Sector vs Defense Sector Performance",
+              "url": "https://www.marketwatch.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "fomc-jun-2026",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "연준이 '금리 인하 준비' 신호를 강하게 보내는 경우",
           "impact": "+5~8%",
-          "oneLine": "연준이 예상보다 빨리 금리 인하 신호 -> 성장주 급상승",
-          "why": "금리가 내려갈 가능성이 있다는 신호가 나오면, 미래 현금흐름의 현재가치가 올라가니 성장주가 큰 폭으로 상승해요. 시장이 이미 높은 금리를 반영했다가, 갑자기 인하 가능성이 나오면 몰려서 사게 돼요.",
+          "oneLine": "성장주 투자자들이 '드디어 저금리 시대가 온다'고 환호해요.",
+          "why": "TSLA는 '미래 이익에 베팅하는 주식'이에요. 금리가 낮아지면 '10년 뒤의 수익'의 현재가치가 올라가거든요. 만약 연준이 '올해 금리를 2~3회 인하할 거다'라고 하면, TSLA 주가는 일주일에 5% 올라갈 수 있어요.",
           "signals": [
             {
-              "title": "인플레이션이 목표(2%) 근처로 빠르게 하락하는 추세",
-              "description": "경제가 연착륙(Soft Landing)할 가능성 높음"
+              "title": "닷플롯(Fed Dot Plot)에서 금리 경로가 하향 수정",
+              "description": "연준 위원들이 '2026 말 기준금리를 4.0% 정도로 본다'고 예상하면 강한 신호"
             },
             {
-              "title": "파월 의장의 '금리 인하 길은 열려 있다' 발언",
-              "description": "9월~12월 금리 인하 가능성 시사"
-            }
-          ],
-          "probability": 20,
-          "sources": [
-            {
-              "title": "FOMC June 2026 Decision",
-              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "eventId": "fomc-jun-16-17",
-      "stock": "pltr",
-      "cards": [
-        {
-          "kind": "up",
-          "title": "금리 인상 시나리오 (확률 35%)",
-          "impact": "+2~4%",
-          "oneLine": "금리 인상 신호가 나와도, 팔란티르는 현금흐름이 튼튼해서 상대적으로 잘 버텨요",
-          "why": "팔란티르는 이미 수익성 있는 계약(정부 계약 특히)을 많이 보유하고 있고, P/E 배수가 비싸기는 해도 현금이 팍팍 들어오거든요. 또한 정부 방위 예산은 금리와 무관하게 책정되니까 영향이 적어요.",
-          "signals": [
-            {
-              "title": "정부 방위 예산 집행 일정 확인",
-              "description": "미국 방위부가 FY2026 예산을 적극 집행할 신호"
-            },
-            {
-              "title": "팔란티르의 정부계약 수주 파이프라인",
-              "description": "향후 분기에도 계약 체결 가능성 높다는 신호"
+              "title": "파월 의장의 기자회견에서 '인내심' 표현 사용",
+              "description": "'환자적으로 금리 인하를 준비 중'이라는 메시지"
             }
           ],
           "probability": 35,
           "sources": [
             {
-              "title": "Palantir Q1 2026 Earnings",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
-            }
-          ]
-        },
-        {
-          "kind": "flat",
-          "title": "금리 동결 시나리오 (확률 45%)",
-          "impact": "-1~2%",
-          "oneLine": "현 상태 유지되면, 팔란티르는 변동 없거나 약간 약할 수 있어요. 왜냐하면 이미 가격이 성장을 많이 반영했거든요.",
-          "why": "팔란티르 주가는 이미 +9% 올랐고(어제 5월 29일), 밸류에이션(P/E 161)이 굉장히 높아요. 추가 상승 연료가 필요한데, 금리 동결만으로는 부족해요. 오히려 수정 가능성도 있어요.",
-          "signals": [
-            {
-              "title": "개별 회사 뉴스 부재",
-              "description": "FOMC 동결만으로는 자체 모멘텀 부족"
-            },
-            {
-              "title": "밸류에이션 리스크 재부각",
-              "description": "PEG 비율(성장 대비 가격) 점검 필요"
-            }
-          ],
-          "probability": 45,
-          "sources": [
-            {
-              "title": "Palantir Stock Analysis May 2026",
-              "url": "https://robinhood.com/us/en/stocks/PLTR/"
-            }
-          ]
-        },
-        {
-          "kind": "down",
-          "title": "금리 인하 신호 시나리오 (확률 20%)",
-          "impact": "-3~6%",
-          "oneLine": "금리 인하가 경기 침체 우려 때문이면, 방위 예산도 영향받아 팔란티르 약세 가능",
-          "why": "금리 인하는 보통 경제가 안 좋아서 나오는 신호예요. 경기 침체 우려가 생기면 정부는 '지출 줄여야 하는 건 아닐까?' 고민하게 돼요. 특히 우크라이나 지원 같은 선택적 지출이 줄어들 수 있어요.",
-          "signals": [
-            {
-              "title": "경기침체(Recession) 우려 신호",
-              "description": "수익률 곡선 역전, 고용 약세 등"
-            },
-            {
-              "title": "정부 정책 기조 전환",
-              "description": "방위 예산 증가폭 축소 신호"
-            }
-          ],
-          "probability": 20,
-          "sources": [
-            {
-              "title": "FOMC June 2026",
+              "title": "Federal Reserve FOMC Statement June 2026",
               "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
             }
           ]
-        }
-      ]
-    },
-    {
-      "eventId": "pltr-shareholder-jun-3",
-      "stock": "pltr",
-      "cards": [
-        {
-          "kind": "up",
-          "title": "가이던스 상향 시나리오 (확률 40%)",
-          "impact": "+5~10%",
-          "oneLine": "CEO 카프가 2026년 매출 성장률을 70% 이상으로 제시 -> 초고속 성장 장점 부각",
-          "why": "팔란티르는 Q1에 이미 매출 85% 성장, 미국 사업 104% 성장이라는 놀라운 숫자를 냈어요. 만약 카프가 '2026년 전체로는 70% 성장 가능하다'고 하면, 투자자들은 '오, 이 성장세가 지속되는구나'라며 기꺼이 높은 PEG를 정당화하게 될 거예요.",
-          "signals": [
-            {
-              "title": "Q2 이후 분기들도 강한 성장 전망",
-              "description": "여름~겨울 분기에도 80%+ 성장 가능"
-            },
-            {
-              "title": "미국 상용(Commercial) 비즈니스의 가속",
-              "description": "정부계약 외에 민간 고객 확대 추진"
-            },
-            {
-              "title": "이윤율(Margin) 개선 전망",
-              "description": "스케일 경제로 수익성도 함께 올라갈 예정"
-            }
-          ],
-          "probability": 40,
-          "sources": [
-            {
-              "title": "Palantir Q1 2026 Results",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
-            },
-            {
-              "title": "Palantir Shareholder Meeting June 3, 2026",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000019/pltr-20260423.htm"
-            }
-          ]
-        },
-        {
-          "kind": "flat",
-          "title": "현상 유지 톤(Conservative Guidance) (확률 40%)",
-          "impact": "-1~2%",
-          "oneLine": "Q1 실적은 좋지만, '이게 계속될 거라고 약속할 수 없다' 톤 -> 주가 실망 매도",
-          "why": "회사가 수수하게 '글쎄, 한두 분기 같은 성장이 나올지는 모르겠어요. 경쟁도 심해지고 있으니까'라고 하면, 투자자들은 '아, 그럼 이미 꺾일 수도 있겠네?'라며 약간 물러날 거예요. 특히 가격이 이미 높은 상태에서는 실망감이 더 크게 작용해요.",
-          "signals": [
-            {
-              "title": "보수적 가이던스 제시",
-              "description": "2026년 성장률을 60~65% 수준으로 낮출 가능성"
-            },
-            {
-              "title": "경쟁 우려 언급",
-              "description": "다른 AI 소프트웨어 업체들의 추격 가능성"
-            }
-          ],
-          "probability": 40,
-          "sources": [
-            {
-              "title": "Palantir Shareholder Meeting",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000019/pltr-20260423.htm"
-            }
-          ]
         },
         {
           "kind": "down",
-          "title": "약한 실적/방향성 시나리오 (확률 20%)",
-          "impact": "-8~15%",
-          "oneLine": "Q2 실적 미리보기가 기대치 이하 또는 AI 수요 둔화 신호 -> 급락 가능",
-          "why": "팔란티르는 지금 AI 황금주라는 평가로 주가가 올라 있어요. 만약 카프가 '실은 AI 프로젝트 체결이 예상보다 느리네요' 같은 발언을 하거나, Q2 실적 가이던스가 약하면 '어? AI 거품?'이라는 의심이 생겨 주가는 급락할 수 있어요.",
+          "title": "연준이 '금리 유지' 또는 '추가 인상' 신호를 보내는 경우",
+          "impact": "-5~8%",
+          "oneLine": "성장주 투자자들이 '금리가 또 올라가나?'라며 패닉을 팔아요.",
+          "why": "만약 연준이 '인플레이션이 여전히 높으니 금리를 유지하거나 올린다'고 하면, 채권 시장에서 장기금리가 폭등해요. 그러면 TSLA 같은 고성장주의 밸류에이션(주가를 정당화하는 배수)가 급락해요. 실제로 2023년 6월 FOMC 회의에서 금리 인상 신호가 나왔을 때 TSLA는 5일 만에 8% 내렸어요.",
           "signals": [
             {
-              "title": "Q2 매출 가이던스 부진",
-              "description": "시장 예상(60~70% 성장)에 미달"
+              "title": "기준금리 인상 또는 '오래 유지' 가이던스",
+              "description": "FOMC가 '2027년까지 금리 인하는 안 한다'고 암시"
             },
             {
-              "title": "AI 프로젝트 파이프라인 약화 신호",
-              "description": "새로운 계약 체결 속도 둔화"
-            },
-            {
-              "title": "고객 회수율(Churn) 우려 언급",
-              "description": "기존 계약 갱신 불확실성"
-            }
-          ],
-          "probability": 20,
-          "sources": [
-            {
-              "title": "Palantir Q1 Results and Guidance",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "eventId": "cpi-may-release-jun-10",
-      "stock": "tsla",
-      "cards": [
-        {
-          "kind": "down",
-          "title": "인플레 상승 시나리오 (확률 30%)",
-          "impact": "-5~10%",
-          "oneLine": "5월 CPI가 예상 이상 높으면(4% 이상) -> 연준은 금리 유지/인상 가능성 높아짐",
-          "why": "인플레가 기대보다 높으면 연준은 금리를 더 오래 높게 유지할 가능성이 커져요. 테슬라 같은 성장주는 이런 전망에 약해요. 구매자들이 '아, 차 샀을 때 이자 비싸네' 생각하면서 수요도 줄어들 수 있어요.",
-          "signals": [
-            {
-              "title": "CPI 전년비 3.9% 이상 기록",
-              "description": "예상(3.5~3.8%) 상회"
-            },
-            {
-              "title": "코어 CPI(식료·에너지 제외) 예상 이상",
-              "description": "주간 인플레 압력 높음"
-            },
-            {
-              "title": "에너지·식료 가격 급등",
-              "description": "원유·곡물 가격 급등"
+              "title": "장기금리(10년물 수익률) 급등",
+              "description": "FOMC 발표 후 미국 10년물 국채 수익률이 5% 이상으로 올라가면 성장주가 울어요"
             }
           ],
           "probability": 30,
           "sources": [
             {
-              "title": "BLS CPI Release Schedule",
-              "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
-            },
-            {
-              "title": "May 2026 CPI Report",
-              "url": "https://www.bls.gov/news.release/cpi.htm"
+              "title": "Reuters - Fed to Hold Rates Steady or Raise",
+              "url": "https://www.reuters.com/business/finance/"
             }
           ]
         },
         {
           "kind": "flat",
-          "title": "예상대로 인플레 시나리오 (확률 50%)",
-          "impact": "-1~1%",
-          "oneLine": "5월 CPI가 시장 예상대로(3.5~3.8%)나오면, 이미 반영된 거라 큰 변동 없음",
-          "why": "시장이 이미 어느 정도의 인플레를 예상하고 가격을 책정했으니까, 그대로 나오면 서프라이즈가 없는 거예요. 따라서 주가는 크게 움직이지 않을 거예요.",
+          "title": "연준이 '관망적' 입장을 유지하는 경우",
+          "impact": "±2~3%",
+          "oneLine": "시장이 이미 예상한 정도의 변동만 있어요.",
+          "why": "TSLA 주가는 이미 '금리가 천천히 내려간다'는 시나리오를 70% 정도 반영하고 있어요. 연준이 '우리는 경제 흐름을 보면서 결정한다'는 뜻의 '관망적' 톤을 유지하면, 주가는 소폭 변동만 있을 거예요.",
           "signals": [
             {
-              "title": "CPI 3.5~3.8% 범위 기록",
-              "description": "시장 컨센서스와 일치"
-            },
-            {
-              "title": "월간 변화(Month-over-Month) 0.3~0.4%",
-              "description": "정상적인 인플레 추세"
+              "title": "FOMC 성명서에서 '인내심' 표현이 중립적으로 유지",
+              "description": "강한 신호(인상 또는 인하)가 아니라 '계속 모니터링' 정도의 표현"
             }
           ],
-          "probability": 50,
+          "probability": 35,
           "sources": [
             {
-              "title": "BLS CPI Schedule",
-              "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+              "title": "Federal Reserve FOMC Communications",
+              "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "fomc-jun-2026",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "연준이 '금리 인하' 신호를 강하게 보내는 경우",
+          "impact": "-2~3%",
+          "oneLine": "경제가 약해진다는 뜻이라 정부 지출 증대 기대감이 떨어져요.",
+          "why": "역설처럼 들리지만, PLTR은 TSLA와 다르게 금리 인하에 약해요. 왜냐하면 연준이 '금리를 내린다'는 건 '경제가 약하다'는 신호거든요. 경제가 약하면 정부도 '방위비를 자르자'는 논의가 나올 수 있어요. 특히 2024년처럼 '국방비 삭감 논의'가 나올 수 있어요.",
+          "signals": [
+            {
+              "title": "의회에서 '국방비 삭감' 언급 증가",
+              "description": "경제가 약해지면 정부도 지출을 줄여야 한다는 주장이 나와요"
+            },
+            {
+              "title": "정부 계약 발주 공고 감소",
+              "description": "정부 기관들이 새로운 IT 계약을 덜 내놓을 거예요"
+            }
+          ],
+          "probability": 30,
+          "sources": [
+            {
+              "title": "Congress.gov - Defense Budget Discussions",
+              "url": "https://www.congress.gov/"
             }
           ]
         },
         {
           "kind": "up",
-          "title": "인플레 하락 시나리오 (확률 20%)",
-          "impact": "+4~8%",
-          "oneLine": "5월 CPI가 3% 이하로 뚝 떨어지면 -> 연준 금리 인하 전망 올라와, 성장주 급상승",
-          "why": "인플레가 빠르게 떨어지면 연준은 '금리를 내려도 되겠는데?'라고 생각하게 돼요. 성장주는 이런 금리 인하 기대감에 가장 빠르게 반응해서 오르거든요.",
+          "title": "연준이 '금리 유지' 또는 불확실성을 강조하는 경우",
+          "impact": "+1~3%",
+          "oneLine": "경제가 불안정하니까 정부가 '국방력'에 투자하겠다는 신호예요.",
+          "why": "정부는 경제가 불확실할 때 '국방'에 더 투자해요. 정지정학적 긴장도 높으니까, FOMC가 '앞으로의 경로가 불확실'이라고 하면 정부가 '우리는 적어도 국방만은 강해야 한다'고 생각해요. PLTR 같은 정부 계약 기업들에게는 오히려 호재예요.",
           "signals": [
             {
-              "title": "CPI 전년비 3% 이하 기록",
-              "description": "연준 목표(2%)에 빠르게 접근 중"
+              "title": "국방부·정보기관의 예산 증액 공시",
+              "description": "FOMC 발표 후 며칠 안에 정부가 국방 IT 예산을 늘린다고 발표할 거예요"
             },
             {
-              "title": "코어 CPI도 하락",
-              "description": "구조적 인플레 완화 신호"
-            },
+              "title": "PLTR의 정부 고객 계약 발표",
+              "description": "FOMC 직후 1~2주 뒤 새로운 대형 계약 수주 소식이 나올 가능성이 높아요"
+            }
+          ],
+          "probability": 50,
+          "sources": [
             {
-              "title": "시장이 '9월 금리 인하' 반영",
-              "description": "선물 시장에서 인하 확률 높아짐"
+              "title": "Department of Defense Budget Priorities",
+              "url": "https://www.defense.gov/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "연준의 메시지가 예상과 크게 다르지 않은 경우",
+          "impact": "±0~1%",
+          "oneLine": "이미 반영된 뉴스라 큰 변동이 없어요.",
+          "why": "PLTR은 이미 정부 계약 기업으로서의 가치가 높게 평가받고 있어요. FOMC 메시지가 특별하지 않으면 변동성이 낮을 거예요.",
+          "signals": [
+            {
+              "title": "정부 고객의 계약 갱신 일정 정상화",
+              "description": "정부 계약이 예정대로 갱신되고 있다는 일상적 뉴스"
             }
           ],
           "probability": 20,
           "sources": [
             {
-              "title": "BLS CPI Release",
-              "url": "https://www.bls.gov/news.release/cpi.htm"
+              "title": "Palantir Investor Relations Updates",
+              "url": "https://investors.palantir.com/"
             }
           ]
         }
       ]
     },
     {
-      "eventId": "cpi-may-release-jun-10",
-      "stock": "pltr",
+      "eventId": "fsd-v14lite-hw3",
+      "stock": "tsla",
       "cards": [
         {
-          "kind": "flat",
-          "title": "인플레 상승해도 거의 영향 없음 (확률 60%)",
-          "impact": "-1~2%",
-          "oneLine": "팔란티르는 수익성 좋은 계약 다수 보유라 인플레에 강함. CPI 발표는 무시할 수준",
-          "why": "팔란티르는 이미 현금을 많이 벌고 있는 회사고, 정부 방위 계약은 인플레에 자동 조정되는 경우가 많아요(contract escalation clauses). 또한 AI 소프트웨어 가격도 올려서 인플레를 고객에게 전가할 수 있어요.",
-          "signals": [
-            {
-              "title": "팔란티르의 장기 계약(multi-year deals) 다수",
-              "description": "인플레 영향이 이미 가격에 반영"
-            },
-            {
-              "title": "정부 고객 특성상 예산 자동 증액",
-              "description": "인플레 시 정부 지출도 올라감"
-            }
-          ],
-          "probability": 60,
-          "sources": [
-            {
-              "title": "Palantir Q1 2026",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
-            }
-          ]
-        },
-        {
           "kind": "up",
-          "title": "인플레 약화로 국방비 확대 관심 (확률 25%)",
+          "title": "FSD V14 Lite를 6월 말까지 제때 출시하는 경우",
           "impact": "+2~4%",
-          "oneLine": "CPI 하락하면, 정부가 '인플레 잡혔으니 국방 예산도 늘려도 된다'고 판단 가능",
-          "why": "정부가 인플레를 잡기 위해 지출을 억제하던 압박이 풀려요. 그러면 국방부 및 정보기관의 예산 집행이 더 적극적으로 될 수 있고, 팔란티르 같은 국방AI 기업이 수혜를 입을 수 있어요.",
+          "oneLine": "테슬라가 약속을 지켰다는 신호라 투자자 신뢰도가 회복돼요.",
+          "why": "테슬라는 '약속을 못 지킨다'는 평판이 있거든요. Optimus, Unsupervised FSD, Cybertruck 생산 등 수십 개의 약속을 미뤘어요. 만약 V14 Lite를 6월 말까지 제대로 출시하면 '아, 이번엔 진짜 하네'라는 평가가 나올 거예요. HW3 차주들의 분노도 어느 정도 누그러질 거고요.",
           "signals": [
             {
-              "title": "인플레 안정화로 재정 여유 인식",
-              "description": "정부가 지출 제약 해제"
+              "title": "테슬라 공식 공지로 V14 Lite 출시 발표",
+              "description": "6월 25~30일 사이에 '미국 지역 HW3 고객을 대상으로 V14 Lite 출시' 공지"
             },
             {
-              "title": "중국 우려·우크라이나 지원 강화",
-              "description": "국방 우선순위 상향"
-            }
-          ],
-          "probability": 25,
-          "sources": [
-            {
-              "title": "US Defense Budget 2026",
-              "url": "https://www.osw.waw.pl/en/publikacje/analyses/2025-12-19/us-defence-budget-2026-congress-approves-continued-support-ukraine"
-            }
-          ]
-        },
-        {
-          "kind": "down",
-          "title": "인플레 급등 + 경기침체 우려 (확률 15%)",
-          "impact": "-5~8%",
-          "oneLine": "CPI 급등하면서 '스태그플레이션(Stagflation)' 우려 -> 경기 위축·방위 예산 감축",
-          "why": "인플레가 갑자기 올라가면서 동시에 경기가 안 좋아지는 '나쁜 시나리오'가 나오면, 정부는 예산을 줄이려고 해요. 팔란티르의 새로운 계약 체결도 줄어들 수 있어요.",
-          "signals": [
-            {
-              "title": "CPI 급등 + 실업률 상승",
-              "description": "스태그플레이션 신호"
-            },
-            {
-              "title": "정부 적자 우려 재부각",
-              "description": "지출 억제 논의"
-            }
-          ],
-          "probability": 15,
-          "sources": [
-            {
-              "title": "BLS CPI Release",
-              "url": "https://www.bls.gov/news.release/cpi.htm"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "eventId": "spacex-starship-jun",
-      "stock": "tsla",
-      "cards": [
-        {
-          "kind": "up",
-          "title": "스타십 성공 시나리오 (확률 40%)",
-          "impact": "+3~6%",
-          "oneLine": "스타십 V3 비행 테스트 성공 -> '일론 승승장구' 이미지로 테슬라 주가도 상승",
-          "why": "일론 머스크의 기술력과 리더십에 대한 믿음이 올라가요. 또한 스페이스X의 성공은 '일론과 테슬라 팀의 기술 수준이 높다'는 증거로 작용해서, 테슬라의 자율주행 기술에 대한 투자자 확신도 높아져요.",
-          "signals": [
-            {
-              "title": "스타십 상단(Upper Stage) 회수 성공",
-              "description": "재사용성 입증"
-            },
-            {
-              "title": "미디어 호평",
-              "description": "'일론, 우주기술 정복' 톤의 보도"
-            }
-          ],
-          "probability": 40,
-          "sources": [
-            {
-              "title": "SpaceX Starship Flight 13",
-              "url": "https://rocketlaunch.org/launch-schedule/spacex/starship-v3"
-            }
-          ]
-        },
-        {
-          "kind": "flat",
-          "title": "예상대로 진행 (확률 35%)",
-          "impact": "-1~2%",
-          "oneLine": "스타십 테스트가 그냥 '또 한 번의 테스트'로 끝나면, 테슬라 주가는 무시",
-          "why": "스페이스X의 테스트 비행은 꽤 자주 나와요. 이미 시장이 'V3 비행'을 예상했다면, 그냥 진행되는 것만으로는 뉴스감이 아닐 수도 있어요.",
-          "signals": [
-            {
-              "title": "비행 부분 성공(Partial Success)",
-              "description": "목표의 70~80% 달성"
-            }
-          ],
-          "probability": 35,
-          "sources": [
-            {
-              "title": "SpaceX Starship Schedule",
-              "url": "https://rocketlaunch.org/launch-schedule/spacex"
-            }
-          ]
-        },
-        {
-          "kind": "down",
-          "title": "스타십 실패 시나리오 (확률 25%)",
-          "impact": "-3~8%",
-          "oneLine": "비행 중 폭발이나 회수 실패 -> '일론이 너무 과신한 건 아닐까?' 의심",
-          "why": "테슬라 투자자들은 일론의 기술력에 큰 기댓값을 가지고 있거든요. 스페이스X가 반복적으로 실패하면, '테슬라의 자율주행이나 로봇도 진짜 될까?'라는 의심이 생겨요. 또한 일론의 시간 분산 우려도 다시 커져요.",
-          "signals": [
-            {
-              "title": "비행 중 엔진 고장 또는 제어 불가",
-              "description": "안전장치 작동 후 중단"
-            },
-            {
-              "title": "상단 회수 실패",
-              "description": "재사용 목표 미달성"
-            },
-            {
-              "title": "미디어의 부정적 톤",
-              "description": "'또 실패' 같은 피로 조성"
-            }
-          ],
-          "probability": 25,
-          "sources": [
-            {
-              "title": "SpaceX Starship History",
-              "url": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "eventId": "tesla-fsd-v14-lite-jun",
-      "stock": "tsla",
-      "cards": [
-        {
-          "kind": "up",
-          "title": "약속 이행 성공 (확률 35%)",
-          "impact": "+2~5%",
-          "oneLine": "FSD v14 라이트를 정말 6월 말까지 출시 -> '이번엔 약속을 지켰다' 신뢰도 회복",
-          "why": "테슬라는 FSD 타이밍을 여러 번 미뤄왔거든요. 만약 이번에 정말 6월 말까지 내보내면, '아, 테슬라가 진짜 기술 개발 중이구나'라는 신뢰가 살아나요. HW3 사용자들의 만족도도 올라가고요.",
-          "signals": [
-            {
-              "title": "6월 1~15일경 베타 배포 신호",
-              "description": "일부 사용자부터 테스트 시작"
-            },
-            {
-              "title": "CEO 또는 오토파일럿 팀장의 '출시 임박' 발언",
-              "description": "언론 인터뷰나 소셜미디어에서"
-            }
-          ],
-          "probability": 35,
-          "sources": [
-            {
-              "title": "Tesla FSD v14 Lite Announcement",
-              "url": "https://www.teslaoracle.com/2026/04/23/tesla-hw3-vehicles-cant-achieve-unsupervised-fsd-v14-lite-to-be-released-by-june-musk-on-q1-2026-earnings-call/"
-            }
-          ]
-        },
-        {
-          "kind": "flat",
-          "title": "6월 말 미루지만 '7월 초' 가능성 (확률 50%)",
-          "impact": "-1~1%",
-          "oneLine": "또 약간 지연되지만, 'FSD 자체는 개발 중'이라는 신호는 주어짐. 큰 하락은 아님",
-          "why": "테슬라가 '죄송해요, 6월 못 맞췄어요. 7월 초/중순 출시'라고 하면, 투자자들은 '아, 역시 미쳤네'라고 한숨 쉬지만, 'FSD가 완전히 안 되는 건 아니구나'라는 확인도 되거든요. 이미 지연에 익숙해져 있어서 큰 충격은 없어요.",
-          "signals": [
-            {
-              "title": "6월 말 당시 '거의 다 됐다'는 발언",
-              "description": "완성도 90% 이상"
-            },
-            {
-              "title": "7월 초 출시 예정 공식 발표",
-              "description": "재계약 명시"
-            }
-          ],
-          "probability": 50,
-          "sources": [
-            {
-              "title": "Tesla Q1 2026 Call",
-              "url": "https://www.teslaoracle.com/2026/04/23/tesla-hw3-vehicles-cant-achieve-unsupervised-fsd-v14-lite-to-be-released-by-june-musk-on-q1-2026-earnings-call/"
-            }
-          ]
-        },
-        {
-          "kind": "down",
-          "title": "전략적 포기 또는 무한 미루기 (확률 15%)",
-          "impact": "-4~10%",
-          "oneLine": "테슬라가 '사실 HW3에 v14는 기술적으로 불가능할 수도 있어요'라고 경고성 발언 -> 신뢰도 급락",
-          "why": "테슬라가 이 약속을 버리면, 투자자들은 'HW3 사용자들을 기만했나? 아니면 기술력이 부족한 건가?' 둘 다 의심하게 돼요. 특히 4월에 명확히 약속했기 때문에, 배신감이 크거든요.",
-          "signals": [
-            {
-              "title": "6월 말경 '기술적 한계 발견' 발언",
-              "description": "낮은 완성도 인정"
-            },
-            {
-              "title": "무기한 연기 또는 대안 제시 부재",
-              "description": "HW3 사용자 보상 논의 없음"
-            }
-          ],
-          "probability": 15,
-          "sources": [
-            {
-              "title": "Tesla FSD Development Status",
-              "url": "https://www.teslarati.com/tesla-hw3-trade-in-discounted-upgrade/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "eventId": "byd-june-sales",
-      "stock": "tsla",
-      "cards": [
-        {
-          "kind": "down",
-          "title": "BYD 판매 계속 악화 (확률 35%)",
-          "impact": "-2~4%",
-          "oneLine": "BYD 6월 판매가 9개월 연속 하락하면 -> '아, EV 시장 포화 신호네' 여기저기 약세",
-          "why": "BYD가 계속 떨어진다는 건 EV 시장 자체의 수요 부족을 의미해요. 테슬라도 '아, 그럼 우리도 더 어려워질까?'라는 우려로 주가가 빠져요. 특히 테슬라의 중국 시장 점유율도 BYD 하락과 무관하지 않거든요.",
-          "signals": [
-            {
-              "title": "BYD 월간 판매 300만 대 이하(예상: 320만 대)",
-              "description": "9개월 연속 하락 지속"
-            },
-            {
-              "title": "BYD의 가격 인하 재추진 뉴스",
-              "description": "시장 회복 노력도 부족"
-            }
-          ],
-          "probability": 35,
-          "sources": [
-            {
-              "title": "BYD April 2026 Sales",
-              "url": "https://www.cnbc.com/2026/05/05/byd-april-sales-exports-china-ev-rivals-leapmotor-zeekr.html"
-            }
-          ]
-        },
-        {
-          "kind": "flat",
-          "title": "BYD 안정화 신호 (확률 45%)",
-          "impact": "-1~1%",
-          "oneLine": "BYD 6월이 5월 정도 수준(330만 대)이면, 바닥 찍은 느낌. 테슬라도 큰 충격 없음",
-          "why": "BYD가 계속 떨어지지 않고 수렴하면, 투자자들은 '아, 경쟁도 격화되지만 나름 균형 잡힐 것 같다'고 생각해요. 테슬라 입장에서도 '우리도 이 정도 경쟁 수준에서 운영할 수 있겠다'는 확신이 생겨요.",
-          "signals": [
-            {
-              "title": "BYD 월간 330~350만 대 수준",
-              "description": "5월과 비슷한 수준 유지"
-            },
-            {
-              "title": "테슬라 중국 판매량 안정",
-              "description": "4월 11만 대 정도"
+              "title": "커뮤니티에서 'V14 Lite 설치 완료' 후기 증가",
+              "description": "Tesla 커뮤니티, 레딧 등에서 HW3 사용자들이 업데이트를 받았다고 보고"
             }
           ],
           "probability": 45,
           "sources": [
             {
-              "title": "BYD Sales Trend",
-              "url": "https://www.autoblog.com/news/byd-sales-slide-for-8-straight-months-despite-strong-export-growth"
+              "title": "Tesla Official Communications",
+              "url": "https://www.tesla.com/"
             }
           ]
         },
         {
-          "kind": "up",
-          "title": "BYD 반등 신호 (확률 20%)",
-          "impact": "+2~5%",
-          "oneLine": "BYD 6월이 400만 대 이상 팔리면 -> '경쟁도 격화되지만, EV 시장 자체는 살아 있다' 신호",
-          "why": "BYD가 반등한다는 건 중국 EV 수요가 다시 올라간다는 뜻이에요. 그러면 전체 파이가 커지니까, 테슬라도 '아, 우리가 가격만 제대로 맞추면 수익성 나올 것 같은데?'라는 기대감으로 오를 수 있어요.",
+          "kind": "down",
+          "title": "V14 Lite 출시가 7월로 밀리거나 기능이 너무 축약된 경우",
+          "impact": "-1~3%",
+          "oneLine": "테슬라가 또 약속을 어겼다고 평가돼요.",
+          "why": "테슬라는 4월 Q1 실적 발표에서 '6월 말까지 V14 Lite를 출시하겠다'고 공언했어요. 만약 이것도 못 지키면 '테슬라 약속은 믿을 게 없다'는 평판이 강해져요. 특히 HW3 차주들의 '집단소송' 가능성도 커지거든요.",
           "signals": [
             {
-              "title": "BYD 월간 판매 400만 대 이상",
-              "description": "8개월 연속 하락 끝남"
+              "title": "테슬라의 공식 지연 공지",
+              "description": "6월 20일 이후 '기술적 이유로 출시가 7월로 미뤄진다' 발표"
             },
             {
-              "title": "BYD의 신제품(배터리, 충전) 호평",
-              "description": "시장 회복 신호"
-            },
-            {
-              "title": "중국 정부의 EV 정책 지원 강화",
-              "description": "구매보조금 또는 세금혜택 재개"
+              "title": "V14 Lite의 기능이 예상보다 제한적",
+              "description": "'자동주행이 전혀 안 된다'는 사용자 불만 폭주"
             }
           ],
-          "probability": 20,
+          "probability": 40,
           "sources": [
             {
-              "title": "BYD Sales March 2026",
-              "url": "https://cleantechnica.com/2026/04/22/byd-wins-in-a-slow-return-to-normal-china-march-ev-sales-report/"
+              "title": "Tesla Earnings Call Q1 2026",
+              "url": "https://www.fool.com/earnings/call-transcripts/2026/04/tesla-tsla-q1-2026-earnings-transcript/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "V14 Lite가 제때 나왔지만 특별한 반응이 없는 경우",
+          "impact": "±0~1%",
+          "oneLine": "예상대로 진행된 이벤트라 시장의 반응이 미미해요.",
+          "why": "TSLA 투자자들은 이미 'V14 Lite가 안 된다'는 걸 알고 있어요. 단지 '최소한 뭔가는 주나'라는 수준의 기대예요. 실제로 출시되면 '그래도 낫네' 정도 평가만 나올 거예요.",
+          "signals": [
+            {
+              "title": "출시 후 미디어 보도 미미",
+              "description": "큰 뉴스 매체에서 V14 Lite를 다루지 않음"
+            },
+            {
+              "title": "TSLA 주가 변동성 낮음",
+              "description": "출시 전후로 주가 변동이 1% 이내"
+            }
+          ],
+          "probability": 15,
+          "sources": [
+            {
+              "title": "Tesla News Archives",
+              "url": "https://www.tesla.com/news"
             }
           ]
         }
@@ -778,37 +536,29 @@
   "narratives": [
     {
       "stock": "tsla",
-      "today": "요즘 테슬라 커뮤니티는 '반신반의'라는 분위기예요. 한편으로는 'FSD 기술이 정말 나올 거야? 또 미루는 건 아닐까?'라는 피로감, 다른 한편으로는 '일론 머스크는 항상 어떻게든 해내더라'는 믿음이 충돌 중이에요. 특히 중국에서 BYD와 테슬라의 경쟁이 심해지고 있다는 뉴스가 자주 나와서, '가격 인하로 마진이 깎여도 수량은 나올까?'라는 걱정이 커요. 하지만 최근 유럽 판매가 46% 증가했다는 뉴스는 긍정적이고요.",
+      "today": "테슬라? '약속 회사'라는 평판이 나날이 악화되고 있어요. 실적은 나쁘지 않은데 주가는 제자리걸음인 이유가 이거거든요. Optimus도 못 했고, Unsupervised FSD도 Q4로 계속 밀리고... 이제 사람들은 '아, 머스크가 또 약속 안 지킬 거겠네'라고 미리 포기하고 있어요. 그래도 일론이 또 뭔가 하나 기적을 일으킬 거 같은 마음에 사람들이 계속 사고 있지만, 믿음이 없어요.",
       "sources": [
         {
-          "title": "Tesla Robotaxi Comparison with Waymo",
-          "url": "https://www.cnbc.com/quotes/TSLA"
+          "title": "Tesla Delayed Promises Analysis",
+          "url": "https://electrek.co/2026/04/22/tesla-elon-musk-unsupervised-fsd-consumer-cars-q4-delay-again/"
         },
         {
-          "title": "Tesla FSD Safety Concerns",
-          "url": "https://www.teslarati.com/tesla-hw3-trade-in-discounted-upgrade/"
-        },
-        {
-          "title": "BYD and Tesla Competition",
-          "url": "https://cleantechnica.com/2026/04/22/byd-wins-in-a-slow-return-to-normal-china-march-ev-sales-report/"
+          "title": "Tesla Q1 2026 Deliveries Miss",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/04/tesla-tsla-q1-2026-earnings-transcript/"
         }
       ]
     },
     {
       "stock": "pltr",
-      "today": "팔란티르 공식 인정받았어요! 5월 29일(어제) +9.21% 급등했어요. 개인 투자자들 사이에서는 'AI가 진짜 돈이 되는 것 같다' '팔란티르가 AI 시대의 승자 중 하나인 것 같다'라는 기대감이 높아요. 특히 정부가 AI와 국방에 투자를 늘린다는 뉴스가 계속 나오니까요. 다만 일부는 '가격이 너무 비싼 건 아닐까? P/E가 160이 넘는데, 성장이 정말 그 수준일까?'라는 의구심도 있어요. 그래도 'AI 황금주', '정부 방위 기업의 새로운 강자' 같은 평가가 지배적이에요.",
+      "today": "팰런타이어는 요즘 '정부가 필요로 하는 기업'이라는 평가를 받고 있어요. 실적만 봐도 매출이 85% 증가했고, 정부 계약도 84% 증가했어요. 근데 동시에 '뭔가 불편한 계약들(이민국과의 계약, 추방 대상자 찾는 AI 같은)' 때문에 인권 단체들이 비판하고 있어요. 투자자들도 '수익은 좋지만 윤리적으로 괜찮나?'라면서 양갈래 마음을 가지고 있어요.",
       "sources": [
         {
-          "title": "Palantir Stock Surge May 29",
-          "url": "https://www.fool.com/investing/2026/05/28/why-palantir-stock-is-soaring-today/"
+          "title": "Palantir Q1 2026 Record Results",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/04/palantir-pltr-q1-2026-earnings-transcript/"
         },
         {
-          "title": "Palantir Q1 2026 Results",
-          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
-        },
-        {
-          "title": "US Defense Budget and AI Investment",
-          "url": "https://www.osw.waw.pl/en/publikacje/analyses/2025-12-19/us-defence-budget-2026-congress-approves-continued-support-ukraine"
+          "title": "Palantir Government Contract Controversy",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000121465926005220/o429261px14a6g.htm"
         }
       ]
     }
