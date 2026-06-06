@@ -1,0 +1,570 @@
+{
+  "generatedAt": "2026-06-06T14:59:38.269Z",
+  "stockPrices": [
+    {
+      "key": "tsla",
+      "priceUSD": 436,
+      "changePercent": -1.2
+    },
+    {
+      "key": "pltr",
+      "priceUSD": 42.5,
+      "changePercent": 2.1
+    }
+  ],
+  "events": [
+    {
+      "id": "macro-fomc-jun",
+      "title": "연방준비제도 금리 결정 회의",
+      "date": "6/17",
+      "day": "",
+      "daysLeft": 11,
+      "stock": null,
+      "concept": "미 중앙은행(연방준비제도)이 금리를 올릴지, 유지할지, 내릴지를 결정하는 회의예요. 이 결정이 바뀌면 모든 주식에 영향을 줄 수 있어요.",
+      "why": "성장주인 TSLA와 PLTR은 금리가 오르면 투자매력이 떨어져요. 왜냐하면 높은 금리 때문에 채권이 더 매력적이 되기 때문이에요. 반대로 금리가 내려가면 성장주에 돈이 몰린답니다.",
+      "importance": "high"
+    },
+    {
+      "id": "tsla-q2-deliveries",
+      "title": "테슬라 Q2 분기 인도량 발표",
+      "date": "6/20",
+      "day": "",
+      "daysLeft": 14,
+      "stock": "tsla",
+      "concept": "테슬라가 올 2분기에 몇 대의 차를 팔았는지 발표하는 거예요. 이 숫자가 크면 클수록 회사가 잘 나가고 있다는 신호랍니다.",
+      "why": "테슬라 주가는 실적 수치에 아주 민감해요. Q2 인도량이 시장 기대치를 넘으면 +5~8% 오를 수 있고, 미치지 못하면 -3~6% 떨어질 수 있어요. 지금 BYD 같은 중국 경쟁사들이 강해지는 상황이라 시장의 기대가 높아요.",
+      "importance": "high"
+    },
+    {
+      "id": "macro-cpi-may",
+      "title": "5월 소비자물가지수 발표",
+      "date": "6/10",
+      "day": "",
+      "daysLeft": 4,
+      "stock": null,
+      "concept": "미국의 물가가 얼마나 올랐는지를 나타내는 지표예요. 물가가 높으면 연방준비제도가 금리를 올릴 가능성이 커져요.",
+      "why": "4월 CPI가 이미 3.8% 상승한 상황이에요. 5월 수치가 높으면 시장은 연준이 금리를 더 오래 유지할 거라고 생각해서, 성장주들이 하락할 수 있어요.",
+      "importance": "high"
+    },
+    {
+      "id": "pltr-ai-adoption",
+      "title": "팔란티르 AI 플랫폼 업데이트 및 정부 계약 발표",
+      "date": "6/15",
+      "day": "",
+      "daysLeft": 9,
+      "stock": "pltr",
+      "concept": "팔란티르의 AI 플랫폼(AIP)이 기업들한테 얼마나 팔리고 있는지, 그리고 미 정부가 새로운 계약을 주는지 발표하는 거예요.",
+      "why": "팔란티르은 정부·국방 부문과 AI 데이터 분석 분야가 주 수익원이에요. Q1 실적에서 이미 상업용 AI 매출이 120% 성장했으니까, Q2도 강할 걸 기대하고 있어요. 좋은 소식이 나오면 +4~7% 오를 수 있어요.",
+      "importance": "medium"
+    }
+  ],
+  "marketTopic": {
+    "oneLine": "우크라이나 전쟁 장기화로 방위산업·전쟁물자 수요가 계속 늘어나는 가운데, 나토가 70억 유로 규모의 새로운 군사원조 방안을 추진 중이에요.",
+    "headline": "전쟁 경제: 글로벌 방위산업 호황, 에너지 불안정",
+    "why": "우크라이나 전쟁이 4년째 계속되면서 나토 국가들이 방위비를 대폭 늘리고 있어요. 독일이 주도한 70억 유로 규모의 새 군사원조 패키지가 7월 나토 정상회담에서 발표될 예정이에요. 이는 전 세계 방위산업 기업들의 호황으로 이어지는데, 동시에 지정학적 불안정이 에너지 가격과 공급망을 흔들 수 있다는 위험을 안고 있어요.",
+    "implications": [
+      {
+        "stock": "pltr",
+        "verdict": "강한 긍정적 영향",
+        "strength": 2,
+        "note": "팔란티르은 정보·국방 계약의 대표주자예요. 나토 전역에서 방위 지출이 늘어나면 정부·국방부가 팔란티르의 데이터 분석 플랫폼을 더 많이 쓰게 돼요. 특히 우크라이나 같은 분쟁 지역에서 실시간 정보 분석이 중요해지는 만큼, 계약 수주가 늘어날 가능성 높아요."
+      },
+      {
+        "stock": "tsla",
+        "verdict": "약한 부정적 영향",
+        "strength": -1,
+        "note": "테슬라는 직접적으로는 방위산업과 무관하지만, 지정학 긴장과 에너지 불안정이 글로벌 공급망을 악화시킬 수 있어요. 또한 정부 재정이 방위비로 몰리면 친환경·EV 보조금이 줄어들 수 있어요. 중국이나 유럽에서의 판매 환경이 어려워질 수 있다는 게 주요 이슈예요."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NATO 70 Billion Euro Ukraine Aid Package",
+        "url": "https://ua.news/en/world/nato-gotuie-novii-paket-dopomogi-ukrayini-na-70-miliardiv-ievro"
+      },
+      {
+        "title": "House Passes Ukraine Aid Bill - US Support",
+        "url": "https://www.nbcnews.com/politics/congress/house-passes-ukraine-aid-bill-another-gop-rebuke-trumps-foreign-policy-rcna348589"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "eventId": "macro-cpi-may",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "CPI 기대치 이하로 나올 경우",
+          "impact": "+2~4%",
+          "oneLine": "연준이 금리 인하를 시작할 가능성이 높아지면서 성장주 중심으로 매수세 몰림",
+          "why": "물가가 예상보다 낮으면 시장은 연준이 금리를 내릴 거라고 판단해요. 테슬라는 저금리 환경에서 사람들이 자동차 구매 의욕이 생기고, 기업의 차입 비용이 내려가니까 긍정적이에요. 특히 성장주는 이런 환경에서 펀드의 관심을 받아요.",
+          "signals": [
+            {
+              "title": "CPI 전년대비 3.5% 이하",
+              "description": "4월의 3.8%보다 크게 내려가는 게 신호예요"
+            },
+            {
+              "title": "시장 선물 조정",
+              "description": "CPI 발표 직후 S&P 500 선물이 +1~1.5% 오르는 움직임"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "May 2026 CPI Expectations",
+              "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "CPI가 예상대로 나올 경우 (3.7~3.9%)",
+          "impact": "±0~2%",
+          "oneLine": "현 상황이 이어질 거라는 판단에 큰 변화 없음, 기술주는 보합세",
+          "why": "시장이 이미 높은 물가를 반영하고 있는 상황이에요. 예상대로 나오면 '아, 맞네' 하고 큰 놀랐을 하지 않아요. 테슬라는 방향성 없이 박스권 안에서 움직일 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "변동성(VIX) 15~17 유지",
+              "description": "시장 불안도가 중립 수준으로 유지되는 상황"
+            },
+            {
+              "title": "TSLA 일중 변동폭 2% 이내",
+              "description": "매매 흐름이 명확하지 않은 보합 신호"
+            }
+          ],
+          "probability": 45,
+          "sources": [
+            {
+              "title": "April 2026 CPI Results",
+              "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "CPI가 높게 나올 경우 (4.0% 이상)",
+          "impact": "-3~5%",
+          "oneLine": "연준의 고금리 장기화 우려가 커지면서 성장주 일제히 매도",
+          "why": "물가가 예상보다 높으면 '아, 연준이 금리를 내릴 수 없겠네'라고 판단해요. 높은 금리는 기업의 차입 비용을 올리고, 사람들의 구매 의욕을 꺾어요. 테슬라 같은 자동차 회사는 금리에 약하니까 5% 정도 하락할 수 있어요.",
+          "signals": [
+            {
+              "title": "CPI 4.1% 이상",
+              "description": "연준이 '계속 견제해야 한다'는 입장 드러낼 가능성"
+            },
+            {
+              "title": "채권 수익률 급등",
+              "description": "10년물 국채 수익률이 4.5% 넘게 올라가는 움직임"
+            }
+          ],
+          "probability": 20,
+          "sources": [
+            {
+              "title": "Inflation Expectations vs Actual Data",
+              "url": "https://streetstats.finance/cycle/inflation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-cpi-may",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "CPI 낮게 나와서 금리 인하 신호 명확할 경우",
+          "impact": "+1~3%",
+          "oneLine": "위험자산 선호 심화로 방위주 섹터 매수 들어옴",
+          "why": "금리가 내려간다는 신호가 나오면 투자자들이 리스크 있는 주식을 더 사요. 팔란티르은 이미 강한 실적 모멘텀이 있으니까, 시장 심리가 좋아지면 함께 오르게 돼요. 다만 기대치가 이미 높아서 큰 폭은 아니에요.",
+          "signals": [
+            {
+              "title": "성장주 모멘텀 지표(NSQ) 상향",
+              "description": "나스닥 100 선물이 전장보다 +1% 이상 오르는 상황"
+            },
+            {
+              "title": "방위주(ITA ETF) 동반 상승",
+              "description": "방위산업 ETF가 함께 오르면서 섹터 강세 확인"
+            }
+          ],
+          "probability": 30,
+          "sources": [
+            {
+              "title": "Sector Performance Analysis",
+              "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "예상 범위 내에서 나올 경우",
+          "impact": "±0~1%",
+          "oneLine": "팔란티르 자체 펀더멘털 강점에 의존, 매크로 영향 최소화",
+          "why": "팔란티르은 정부 계약과 AI 성장으로 이미 호재가 많아요. 매크로 물가 지표가 예상대로 나오는 건 큰 변수가 아니에요. 회사 자체의 어닝 모멘텀이 더 중요해요.",
+          "signals": [
+            {
+              "title": "PLTR 상대강도지수(RSI) 50~60 사이",
+              "description": "과매수도 과매도도 아닌 중립 상태 유지"
+            }
+          ],
+          "probability": 55,
+          "sources": [
+            {
+              "title": "Palantir Fundamental Analysis",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "CPI 높게 나올 경우",
+          "impact": "-2~4%",
+          "oneLine": "위험회피 심화로 성장주 일제히 매도, 방위주도 떨어짐",
+          "why": "물가가 높으면 연준이 금리를 유지할 거라는 우려가 나와요. 이때는 모든 성장주, 기술주가 일제히 내려가요. 팔란티르도 예외는 아니에요. 다만 정부 계약 안정성이 있어서 테슬라보다는 낙폭이 작을 거예요.",
+          "signals": [
+            {
+              "title": "채권 수익률 상승",
+              "description": "10년물 국채 수익률이 4.5% 이상으로 올라가기"
+            },
+            {
+              "title": "달러 강세",
+              "description": "달러 인덱스(DXY)가 104 이상으로 강세 전환"
+            }
+          ],
+          "probability": 15,
+          "sources": [
+            {
+              "title": "Bond Yields and Tech Stock Correlation",
+              "url": "https://streetstats.finance/cycle/inflation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-fomc-jun",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "down",
+          "title": "연준이 '고금리 유지' 신호를 낼 경우 (파월 강경 톤)",
+          "impact": "-4~7%",
+          "oneLine": "성장주 일제 매도, 금리 장기 고수 우려로 기술주 약세 확대",
+          "why": "연준 의장 파월이 '아직 금리를 내릴 단계가 아니다'라는 톤으로 발언하면 시장은 낙담해요. 특히 테슬라 같은 고성장 기업은 높은 금리에 취약하거든요. 차입금이 비싸지니까 R&D 투자도 줄어들고, 사람들의 자동차 할부 구매도 줄어들어요.",
+          "signals": [
+            {
+              "title": "파월 발언에서 'restrictive' 언급",
+              "description": "금리가 여전히 제한적이라는 표현 포함"
+            },
+            {
+              "title": "닷플롯(Dot Plot) 2026년말 금리 전망 상향",
+              "description": "연준 내부 전망에서 금리를 더 높게 유지할 거라고 시사"
+            }
+          ],
+          "probability": 35,
+          "sources": [
+            {
+              "title": "FOMC June 2026 Meeting",
+              "url": "https://www.federalreserve.gov/newsevents/2026-june.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "연준이 '인내심 있게 기다리자'는 중립 톤 발언",
+          "impact": "±1~2%",
+          "oneLine": "현 상황 유지로 판단, 테슬라는 보합세 이어갈 것 예상",
+          "why": "연준이 '더 데이터를 봐서 결정하자'는 톤이면 시장은 확신이 없어요. 너무 강경하지도, 너무 비둘기처럼 약하지도 않은 상황. 테슬라는 큰 방향성 없이 움직일 거예요.",
+          "signals": [
+            {
+              "title": "파월이 'data-dependent' 강조",
+              "description": "데이터를 더 봐서 결정한다는 중립적 표현"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Fed Policy Stance Analysis",
+              "url": "https://www.mitrade.com/ae-en/insights/others/trading-basics/FOMC-meetings-and-2026-FOMC-meetings-schedule"
+            }
+          ]
+        },
+        {
+          "kind": "up",
+          "title": "연준이 '금리 인하 준비' 신호를 낼 경우 (매파적 톤 완화)",
+          "impact": "+4~6%",
+          "oneLine": "성장주 일제 매수 들어옴, 테슬라 등 기술주 반등",
+          "why": "연준이 '곧 금리를 내릴 거다'라는 신호를 주면 성장주에 돈이 몰려요. 테슬라는 이미 가격이 많이 내려 있으니까(436달러), 호재가 나오면 빠르게 반등할 수 있어요. 차입금이 싸질 수 있다는 판단에 기관 매수세도 들어오고요.",
+          "signals": [
+            {
+              "title": "닷플롯 금리 전망 하향",
+              "description": "연중 인하를 시사하는 닷플롯 전망 발표"
+            },
+            {
+              "title": "파월의 '인내심' 강조 언급",
+              "description": "금리를 너무 빨리 올리지는 않겠다는 표현"
+            }
+          ],
+          "probability": 15,
+          "sources": [
+            {
+              "title": "Fed Guidance and Rate Cut Expectations",
+              "url": "https://ultimamarkets.com/academy/when-is-the-next-fed-meeting/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "macro-fomc-jun",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "연준의 고금리 유지 신호 → 경기 둔화 우려 → 정부 방위비 확대",
+          "impact": "+2~4%",
+          "oneLine": "역설적으로, 경기가 어려워질수록 정부는 방위 지출을 늘린다는 게 팔란티르의 장점",
+          "why": "금리가 높으면 경기가 둔화돼요. 하지만 경제가 약할 때일수록 정부는 (일자리나 안보 때문에) 방위비를 삭감하지 않아요. 오히려 증액하기도 해요. 팔란티르의 AI 분석 솔루션이 정부의 효율적 의사결정을 돕는다고 평가돼요.",
+          "signals": [
+            {
+              "title": "경기 선행지수 약세 동시에",
+              "description": "경기가 어렵다는 신호가 나타났을 때"
+            },
+            {
+              "title": "국방부 예산 관련 뉴스",
+              "description": "새로운 국방부 계약 발표나 예산 증액 뉴스 나올 확률 높음"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "Palantir Government Business Model",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "연준의 중립 입장 → 매크로 불확실성은 지속",
+          "impact": "±0~1%",
+          "oneLine": "팔란티르은 매크로보다 회사 실적과 정부 계약에 더 민감",
+          "why": "팔란티르은 정부 고객 기반이 안정적이어서 금리 변화에 덜 민감해요. Q1에 이미 상업용 AI 매출이 120% 증가했다는 호재가 있으니까, FOMC 결과와 상관없이 자체 모멘텀에 의존할 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "팔란티르 일중 변동폭 1~2%",
+              "description": "시장 전체 변동성보다 훨씬 낮은 움직임 보일 확률"
+            }
+          ],
+          "probability": 55,
+          "sources": [
+            {
+              "title": "Palantir Q1 2026 Strong Results",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "금리 급등 + 경제 불황 우려 → 전반적 리스크 회피",
+          "impact": "-2~3%",
+          "oneLine": "정부 계약의 불확실성이 커지면서 팔란티르도 함께 하락",
+          "why": "경제가 정말 나빠지면 정부도 방위비 외의 부분을 우선 줄이려고 해요. 팔란티르의 상업용 AI 사업이 아직 초기라서 일반 기업들이 IT 지출을 줄이면 영향을 받을 수 있어요.",
+          "signals": [
+            {
+              "title": "채권 수익률 급등과 동시 경기 약세 신호",
+              "description": "경기가 정말 나빠진다는 신호가 나올 때"
+            }
+          ],
+          "probability": 5,
+          "sources": [
+            {
+              "title": "Economic Recession Risk",
+              "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "tsla-q2-deliveries",
+      "stock": "tsla",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "Q2 인도량 시장 기대치 초과 (140만대 이상)",
+          "impact": "+5~9%",
+          "oneLine": "BYD와의 경쟁에서 한 걸음 앞선다는 증거, 매수세 폭주",
+          "why": "테슬라 주가는 분기 인도량에 가장 민감해요. 시장이 지금 135~140만대를 예상하고 있는데 141만대 이상 나오면 '테슬라가 BYD와의 경쟁에서 이기고 있다'는 신호가 돼요. 이미 주가가 많이 내려 있어서 좋은 뉴스가 나오면 급등할 수 있어요.",
+          "signals": [
+            {
+              "title": "분기 인도량 140만 대 돌파",
+              "description": "시장 합의 기대치인 135~138만대를 크게 초과"
+            },
+            {
+              "title": "경영진의 강한 가이던스",
+              "description": "연간 200만대 이상 달성 가능 언급"
+            }
+          ],
+          "probability": 25,
+          "sources": [
+            {
+              "title": "Tesla Production and Delivery Targets",
+              "url": "https://polymarket.com/event/what-price-will-tsla-hit-in-june-2026"
+            },
+            {
+              "title": "BYD vs Tesla Q1 2026 Sales",
+              "url": "https://insideevs.com/news/792143/tesla-no1-ev-maker-q1-2026/"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "Q2 인도량이 예상대로 나올 경우 (135~140만대)",
+          "impact": "±1~3%",
+          "oneLine": "예상대로라면 이미 주가에 반영됐으니까 큰 변화 없음",
+          "why": "테슬라 주가는 이미 많은 기대가 빠져 있어요(436달러). 예상대로 나오면 '그래, 맞네' 하고 끝나요. 특별히 나쁘지도, 특별히 좋지도 않으니까 보합세가 될 가능성 높아요.",
+          "signals": [
+            {
+              "title": "발표 후 일중 변동폭 1~2%",
+              "description": "큰 방향성이 없이 박스권 안에서 움직임"
+            }
+          ],
+          "probability": 60,
+          "sources": [
+            {
+              "title": "Tesla Q2 2026 Delivery Estimates",
+              "url": "https://www.cnbc.com/quotes/TSLA"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "Q2 인도량 기대치 미만 (135만대 미만)",
+          "impact": "-4~8%",
+          "oneLine": "경쟁 심화, 공급망 문제 우려로 강한 낙장세 예상",
+          "why": "130만대 이하로 떨어지면 시장은 BYD 경쟁과 EV 시장 포화에 대한 우려를 크게 높일 거예요. 테슬라는 이미 시가총액이 크니까 성장성 기대에 많이 의존하고 있어요. 이 기대가 꺾이면 빠르게 내려갈 수 있어요.",
+          "signals": [
+            {
+              "title": "분기 인도량 130만대 미만",
+              "description": "전분기 추정치에서 큰 폭 하락"
+            },
+            {
+              "title": "경영진이 약한 가이던스",
+              "description": "'경쟁이 심화되고 있다' 같은 신중한 발언"
+            }
+          ],
+          "probability": 15,
+          "sources": [
+            {
+              "title": "Tesla Quarterly Delivery Trends",
+              "url": "https://www.cnbc.com/quotes/TSLA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "eventId": "pltr-ai-adoption",
+      "stock": "pltr",
+      "cards": [
+        {
+          "kind": "up",
+          "title": "Q2 AI 플랫폼(AIP) 매출 강하게 성장 발표 + 새 국방부 계약",
+          "impact": "+4~7%",
+          "oneLine": "Q1의 120% 성장이 지속된다는 증거, AI 기업으로서의 위상 재확인",
+          "why": "팔란티르의 가장 뜨거운 이슈는 'AI 수익화'예요. Q1에 AI 매출이 이미 120% 늘었으니까 Q2도 강할 거라는 기대가 있어요. 또 새로운 국방부 계약이 나오면 '정부도 팔란티르의 AI를 믿는다'는 신호가 돼요.",
+          "signals": [
+            {
+              "title": "Q2 AI 플랫폼 매출 전년 대비 100% 이상 성장",
+              "description": "Q1 수준의 성장을 유지한다는 증거"
+            },
+            {
+              "title": "새로운 정부 계약 발표",
+              "description": "특히 국방부나 정보기관과의 대형 계약"
+            }
+          ],
+          "probability": 40,
+          "sources": [
+            {
+              "title": "Palantir AI Platform Growth",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        },
+        {
+          "kind": "flat",
+          "title": "Q2 AI 매출이 합리적 수준에서 성장하되, 예상을 정확히 맞춤",
+          "impact": "±0~2%",
+          "oneLine": "기대가 이미 매우 높으니까, 예상대로는 작은 변화",
+          "why": "팔란티르은 이미 시장의 사랑을 받고 있어요. 예상대로 나오면 '좋네' 하고 끝나요. 특별히 나쁜 것도 아니고, 특별히 놀라운 것도 아니니까. 기술주 섹터 분위기에 따라 움직일 가능성이 높아요.",
+          "signals": [
+            {
+              "title": "일중 변동폭 1% 이내",
+              "description": "큰 반응이 없는 보합 신호"
+            }
+          ],
+          "probability": 50,
+          "sources": [
+            {
+              "title": "Palantir Q1 2026 Strong Guidance",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        },
+        {
+          "kind": "down",
+          "title": "AI 매출 성장이 기대치보다 낮거나, 경제 약화로 상업 계약 지연",
+          "impact": "-3~5%",
+          "oneLine": "AI 성장이 둔화했다는 신호 → 성장성 의심",
+          "why": "팔란티르의 주가는 AI 성장에 많이 베팅하고 있어요. 만약 AI 매출 성장이 기대치(80~100%)보다 낮으면 '어? AI가 생각보다 안 팔리네?' 하는 의심이 생겨요. 또 경기가 약해지면 민간 기업들의 AI 투자가 연기될 수 있어요.",
+          "signals": [
+            {
+              "title": "AI 매출 성장 50% 미만",
+              "description": "Q1의 120%에서 크게 둔화"
+            },
+            {
+              "title": "경제 약화로 상업 계약 가이던스 하향",
+              "description": "민간 부문 매출 전망을 낮추는 발언"
+            }
+          ],
+          "probability": 10,
+          "sources": [
+            {
+              "title": "Palantir Business Model Risk",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "narratives": [
+    {
+      "stock": "tsla",
+      "today": "요즘 테슬라 얘기할 때 투자자들은 '경쟁이 심해졌다'는 걱정부터 꺼내요. BYD가 중국에서 우위를 차지하고 있고, 테슬라도 마진율이 떨어지면서 수익성 우려가 나오고 있거든요. 동시에 '자율주행(FSD)이 정말 먹혀들까?', '테슬라의 AI 전략이 팔란티르처럼 먹혀들까?' 하는 의문도 있어요. 일론 머스크의 정치 발언이나 X 플랫폼의 이슈도 한국과 유럽에서는 부정적으로 받아들여지고 있고요. 그래서 지금 테슬라는 호재를 애타게 기다리는 상황이에요. Q2 인도량이 강하게 나오거나, FSD의 규제 승인이 나오면 다시 살아날 수 있다는 희망이 있어요.",
+      "sources": [
+        {
+          "title": "Recent Tesla News and Market Sentiment",
+          "url": "https://www.cnbc.com/quotes/TSLA"
+        },
+        {
+          "title": "Tesla vs BYD Competition",
+          "url": "https://insideevs.com/news/792143/tesla-no1-ev-maker-q1-2026/"
+        }
+      ]
+    },
+    {
+      "stock": "pltr",
+      "today": "팔란티르은 요즘 AI 열풍의 가장 큰 수혜자라는 평가를 받고 있어요. Q1에 AI 플랫폼(AIP) 매출이 120% 증가했으니까, 투자자들은 '이건 정말 먹히는 비즈니스네' 하고 인정하고 있어요. 게다가 미국 정부와의 계약이 계속 늘어나는 데다, 우크라이나 전쟁으로 방위 지출이 늘면서 호재가 계속 나오고 있어요. 다만 주가가 벌써 많이 올라있어서 '이 가격에 사도 괜찮을까?'라는 의문도 있어요. 그리고 상업용(민간 기업) AI 매출의 지속성에 대한 의문도 있어요. '정부 계약은 계속 나오겠지만, 일반 기업들이 정말 팔란티르의 AI를 비싸게 살까?'라는 거죠. 그래서 다음 분기 실적에서 상업용 매출이 얼마나 나오는지가 핵심이에요.",
+      "sources": [
+        {
+          "title": "Palantir Q1 2026 Exceptional Results",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm"
+        },
+        {
+          "title": "NATO Ukraine Support and Defense Spending",
+          "url": "https://ua.news/en/world/nato-gotuie-novii-paket-dopomogi-ukrayini-na-70-miliardiv-ievro"
+        }
+      ]
+    }
+  ]
+}
